@@ -189,13 +189,15 @@ const LESSON_DATA = {
           `,
           questions: [
             {
-              prompt: `<svg viewBox="0 0 95 145" xmlns="http://www.w3.org/2000/svg" style="display:block;margin:8px auto;max-width:120px">
-  <polygon points="10,10 36,10 36,75 62,75 62,114 10,114" fill="#E8F8F3" stroke="#2D9B7C" stroke-width="2" fill-rule="nonzero"/>
-  <line x1="36" y1="10" x2="36" y2="75" stroke="#D4A23C" stroke-width="1.5" stroke-dasharray="4,3"/>
+              prompt: `<svg viewBox="0 0 85 132" xmlns="http://www.w3.org/2000/svg" style="display:block;margin:8px auto;max-width:115px">
+  <rect x="10" y="10" width="26" height="65" fill="#E8F8F3"/>
+  <rect x="10" y="75" width="52" height="39" fill="#D4EEE6"/>
+  <polygon points="10,10 36,10 36,75 62,75 62,114 10,114" fill="none" stroke="#2D9B7C" stroke-width="2"/>
+  <line x1="10" y1="75" x2="36" y2="75" stroke="#D4A23C" stroke-width="1.5" stroke-dasharray="4,3"/>
   <text x="23" y="7" text-anchor="middle" fill="#1B2A4A" font-size="10" font-family="sans-serif">2</text>
-  <text x="49" y="137" text-anchor="middle" fill="#1B2A4A" font-size="10" font-family="sans-serif">4</text>
   <text x="5" y="44" text-anchor="end" fill="#1B2A4A" font-size="10" font-family="sans-serif">5</text>
-  <text x="68" y="96" text-anchor="start" fill="#1B2A4A" font-size="10" font-family="sans-serif">3</text>
+  <text x="36" y="128" text-anchor="middle" fill="#1B2A4A" font-size="10" font-family="sans-serif">4</text>
+  <text x="67" y="96" text-anchor="start" fill="#1B2A4A" font-size="10" font-family="sans-serif">3</text>
 </svg>Яка загальна площа цієї фігури?`,
               options: ["22 кв. одиниць", "28 кв. одиниць", "14 кв. одиниць", "26 кв. одиниць"],
               correct: 0,
@@ -207,16 +209,14 @@ const LESSON_DATA = {
               solution: "4 × 3 = 12; 2 × 5 = 10; 12 + 10 = 22 кв. одиниць."
             },
             {
-              prompt: `<svg viewBox="0 0 120 115" xmlns="http://www.w3.org/2000/svg" style="display:block;margin:8px auto;max-width:150px">
-  <polygon points="10,10 94,10 94,46 66,46 66,88 10,88" fill="#E8F8F3" stroke="#2D9B7C" stroke-width="2"/>
-  <line x1="66" y1="10" x2="66" y2="46" stroke="#D4A23C" stroke-width="1.5" stroke-dasharray="4,3"/>
-  <line x1="66" y1="46" x2="94" y2="46" stroke="#D4A23C" stroke-width="1.5" stroke-dasharray="4,3"/>
+              prompt: `<svg viewBox="0 0 115 100" xmlns="http://www.w3.org/2000/svg" style="display:block;margin:8px auto;max-width:145px">
+  <polygon points="10,10 94,10 94,52 66,52 66,80 10,80" fill="#E8F8F3" stroke="#2D9B7C" stroke-width="2"/>
+  <rect x="66" y="10" width="28" height="42" fill="#FDEAE4" stroke="#E8704A" stroke-width="1.5" stroke-dasharray="4,3"/>
   <text x="52" y="6" text-anchor="middle" fill="#1B2A4A" font-size="10" font-family="sans-serif">6</text>
-  <text x="52" y="102" text-anchor="middle" fill="#1B2A4A" font-size="10" font-family="sans-serif">4</text>
-  <text x="5" y="50" text-anchor="end" fill="#1B2A4A" font-size="10" font-family="sans-serif">5</text>
-  <text x="99" y="30" text-anchor="start" fill="#E8704A" font-size="10" font-family="sans-serif">3</text>
+  <text x="5" y="46" text-anchor="end" fill="#1B2A4A" font-size="10" font-family="sans-serif">5</text>
   <text x="80" y="6" text-anchor="middle" fill="#E8704A" font-size="10" font-family="sans-serif">2</text>
-  <text x="80" y="35" text-anchor="middle" fill="#E8704A" font-size="9" font-family="sans-serif" font-style="italic">куток</text>
+  <text x="99" y="34" text-anchor="start" fill="#E8704A" font-size="10" font-family="sans-serif">3</text>
+  <text x="80" y="33" text-anchor="middle" fill="#E8704A" font-size="9" font-family="sans-serif" font-style="italic">куток</text>
 </svg>Яка площа цієї фігури?`,
               options: ["24 кв. одиниць", "30 кв. одиниць", "20 кв. одиниць", "18 кв. одиниць"],
               correct: 0,
@@ -228,12 +228,14 @@ const LESSON_DATA = {
               solution: "Площа великого прямокутника: 6×5=30. Вирізаний куток: 2×3=6. 30−6=24 кв. одиниць."
             },
             {
-              prompt: `<svg viewBox="0 0 115 90" xmlns="http://www.w3.org/2000/svg" style="display:block;margin:8px auto;max-width:145px">
-  <polygon points="10,10 46,10 46,46 94,46 94,70 10,70" fill="#E8F8F3" stroke="#2D9B7C" stroke-width="2"/>
-  <line x1="46" y1="10" x2="46" y2="46" stroke="#D4A23C" stroke-width="1.5" stroke-dasharray="4,3"/>
+              prompt: `<svg viewBox="0 0 115 88" xmlns="http://www.w3.org/2000/svg" style="display:block;margin:8px auto;max-width:145px">
+  <rect x="10" y="10" width="36" height="36" fill="#E8F8F3"/>
+  <rect x="10" y="46" width="84" height="24" fill="#D4EEE6"/>
+  <polygon points="10,10 46,10 46,46 94,46 94,70 10,70" fill="none" stroke="#2D9B7C" stroke-width="2"/>
+  <line x1="10" y1="46" x2="46" y2="46" stroke="#D4A23C" stroke-width="1.5" stroke-dasharray="4,3"/>
   <text x="28" y="7" text-anchor="middle" fill="#1B2A4A" font-size="10" font-family="sans-serif">3</text>
-  <text x="52" y="84" text-anchor="middle" fill="#1B2A4A" font-size="10" font-family="sans-serif">7</text>
   <text x="5" y="30" text-anchor="end" fill="#1B2A4A" font-size="10" font-family="sans-serif">3</text>
+  <text x="52" y="84" text-anchor="middle" fill="#1B2A4A" font-size="10" font-family="sans-serif">7</text>
   <text x="99" y="60" text-anchor="start" fill="#1B2A4A" font-size="10" font-family="sans-serif">2</text>
 </svg>Яка загальна площа цієї фігури?`,
               options: ["15 кв. одиниць", "23 кв. одиниць", "19 кв. одиниць", "30 кв. одиниць"],
