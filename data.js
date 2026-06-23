@@ -210,13 +210,14 @@ const LESSON_DATA = {
             },
             {
               prompt: `<svg viewBox="0 0 115 100" xmlns="http://www.w3.org/2000/svg" style="display:block;margin:8px auto;max-width:145px">
-  <polygon points="10,10 94,10 94,52 66,52 66,80 10,80" fill="#E8F8F3" stroke="#2D9B7C" stroke-width="2"/>
-  <rect x="66" y="10" width="28" height="42" fill="#FDEAE4" stroke="#E8704A" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <polygon points="10,10 94,10 94,38 66,38 66,80 10,80" fill="#E8F8F3" stroke="#2D9B7C" stroke-width="2"/>
+  <rect x="66" y="38" width="28" height="42" fill="#FDEAE4" stroke="#E8704A" stroke-width="1.5" stroke-dasharray="4,3"/>
   <text x="52" y="6" text-anchor="middle" fill="#1B2A4A" font-size="10" font-family="sans-serif">6</text>
   <text x="5" y="46" text-anchor="end" fill="#1B2A4A" font-size="10" font-family="sans-serif">5</text>
-  <text x="80" y="6" text-anchor="middle" fill="#E8704A" font-size="10" font-family="sans-serif">2</text>
-  <text x="99" y="34" text-anchor="start" fill="#E8704A" font-size="10" font-family="sans-serif">3</text>
-  <text x="80" y="33" text-anchor="middle" fill="#E8704A" font-size="9" font-family="sans-serif" font-style="italic">куток</text>
+  <text x="38" y="94" text-anchor="middle" fill="#1B2A4A" font-size="10" font-family="sans-serif">4</text>
+  <text x="80" y="34" text-anchor="middle" fill="#E8704A" font-size="10" font-family="sans-serif">2</text>
+  <text x="99" y="62" text-anchor="start" fill="#E8704A" font-size="10" font-family="sans-serif">3</text>
+  <text x="80" y="62" text-anchor="middle" fill="#E8704A" font-size="9" font-family="sans-serif" font-style="italic">куток</text>
 </svg>Яка площа цієї фігури?`,
               options: ["24 кв. одиниць", "30 кв. одиниць", "20 кв. одиниць", "18 кв. одиниць"],
               correct: 0,
