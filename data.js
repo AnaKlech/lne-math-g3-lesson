@@ -41,7 +41,15 @@ const LESSON_DATA = {
           `,
           questions: [
             {
-              prompt: "Прямокутник на сітці має 5 стовпців і 3 рядки. Яка його площа?",
+              prompt: `<svg viewBox="0 0 120 80" xmlns="http://www.w3.org/2000/svg" style="display:block;margin:8px auto;max-width:150px">
+  <rect x="10" y="10" width="100" height="60" fill="#E8F8F3" stroke="#2D9B7C" stroke-width="2"/>
+  <line x1="30" y1="10" x2="30" y2="70" stroke="#2D9B7C" stroke-width="1"/>
+  <line x1="50" y1="10" x2="50" y2="70" stroke="#2D9B7C" stroke-width="1"/>
+  <line x1="70" y1="10" x2="70" y2="70" stroke="#2D9B7C" stroke-width="1"/>
+  <line x1="90" y1="10" x2="90" y2="70" stroke="#2D9B7C" stroke-width="1"/>
+  <line x1="10" y1="30" x2="110" y2="30" stroke="#2D9B7C" stroke-width="1"/>
+  <line x1="10" y1="50" x2="110" y2="50" stroke="#2D9B7C" stroke-width="1"/>
+</svg>Яка площа цього прямокутника?`,
               options: ["16 кв. одиниць", "15 кв. одиниць", "8 кв. одиниць", "12 кв. одиниць"],
               correct: 1,
               explain: {
@@ -52,7 +60,17 @@ const LESSON_DATA = {
               solution: "5 стовпців × 3 рядки = 15 кв. одиниць."
             },
             {
-              prompt: "На сітці прямокутник: 6 квадратів у рядку, 4 рядки. Що дорівнює площа?",
+              prompt: `<svg viewBox="0 0 130 95" xmlns="http://www.w3.org/2000/svg" style="display:block;margin:8px auto;max-width:160px">
+  <rect x="10" y="10" width="108" height="72" fill="#E8F8F3" stroke="#2D9B7C" stroke-width="2"/>
+  <line x1="28" y1="10" x2="28" y2="82" stroke="#2D9B7C" stroke-width="1"/>
+  <line x1="46" y1="10" x2="46" y2="82" stroke="#2D9B7C" stroke-width="1"/>
+  <line x1="64" y1="10" x2="64" y2="82" stroke="#2D9B7C" stroke-width="1"/>
+  <line x1="82" y1="10" x2="82" y2="82" stroke="#2D9B7C" stroke-width="1"/>
+  <line x1="100" y1="10" x2="100" y2="82" stroke="#2D9B7C" stroke-width="1"/>
+  <line x1="10" y1="28" x2="118" y2="28" stroke="#2D9B7C" stroke-width="1"/>
+  <line x1="10" y1="46" x2="118" y2="46" stroke="#2D9B7C" stroke-width="1"/>
+  <line x1="10" y1="64" x2="118" y2="64" stroke="#2D9B7C" stroke-width="1"/>
+</svg>Яка площа цього прямокутника?`,
               options: ["10 кв. одиниць", "20 кв. одиниць", "24 кв. одиниць", "18 кв. одиниць"],
               correct: 2,
               explain: {
@@ -63,7 +81,16 @@ const LESSON_DATA = {
               solution: "6 × 4 = 24 кв. одиниць."
             },
             {
-              prompt: "Прямокутник займає 7 стовпців та 2 рядки на сітці. Яка площа?",
+              prompt: `<svg viewBox="0 0 155 55" xmlns="http://www.w3.org/2000/svg" style="display:block;margin:8px auto;max-width:200px">
+  <rect x="10" y="10" width="126" height="36" fill="#E8F8F3" stroke="#2D9B7C" stroke-width="2"/>
+  <line x1="28" y1="10" x2="28" y2="46" stroke="#2D9B7C" stroke-width="1"/>
+  <line x1="46" y1="10" x2="46" y2="46" stroke="#2D9B7C" stroke-width="1"/>
+  <line x1="64" y1="10" x2="64" y2="46" stroke="#2D9B7C" stroke-width="1"/>
+  <line x1="82" y1="10" x2="82" y2="46" stroke="#2D9B7C" stroke-width="1"/>
+  <line x1="100" y1="10" x2="100" y2="46" stroke="#2D9B7C" stroke-width="1"/>
+  <line x1="118" y1="10" x2="118" y2="46" stroke="#2D9B7C" stroke-width="1"/>
+  <line x1="10" y1="28" x2="136" y2="28" stroke="#2D9B7C" stroke-width="1"/>
+</svg>Яка площа цього прямокутника?`,
               options: ["14 кв. одиниць", "18 кв. одиниць", "9 кв. одиниць", "12 кв. одиниць"],
               correct: 0,
               explain: {
@@ -90,7 +117,20 @@ const LESSON_DATA = {
               solution: "Площа прямокутника = Довжина × Ширина (або рядки × стовпці)."
             },
             {
-              prompt: "Прямокутник на сітці займає 8 квадратів у кожному рядку і має 5 рядків. Яка площа?",
+              prompt: `<svg viewBox="0 0 165 110" xmlns="http://www.w3.org/2000/svg" style="display:block;margin:8px auto;max-width:200px">
+  <rect x="10" y="10" width="144" height="90" fill="#E8F8F3" stroke="#2D9B7C" stroke-width="2"/>
+  <line x1="28" y1="10" x2="28" y2="100" stroke="#2D9B7C" stroke-width="1"/>
+  <line x1="46" y1="10" x2="46" y2="100" stroke="#2D9B7C" stroke-width="1"/>
+  <line x1="64" y1="10" x2="64" y2="100" stroke="#2D9B7C" stroke-width="1"/>
+  <line x1="82" y1="10" x2="82" y2="100" stroke="#2D9B7C" stroke-width="1"/>
+  <line x1="100" y1="10" x2="100" y2="100" stroke="#2D9B7C" stroke-width="1"/>
+  <line x1="118" y1="10" x2="118" y2="100" stroke="#2D9B7C" stroke-width="1"/>
+  <line x1="136" y1="10" x2="136" y2="100" stroke="#2D9B7C" stroke-width="1"/>
+  <line x1="10" y1="28" x2="154" y2="28" stroke="#2D9B7C" stroke-width="1"/>
+  <line x1="10" y1="46" x2="154" y2="46" stroke="#2D9B7C" stroke-width="1"/>
+  <line x1="10" y1="64" x2="154" y2="64" stroke="#2D9B7C" stroke-width="1"/>
+  <line x1="10" y1="82" x2="154" y2="82" stroke="#2D9B7C" stroke-width="1"/>
+</svg>Яка площа цього прямокутника?`,
               options: ["26 кв. одиниць", "45 кв. одиниць", "40 кв. одиниць", "13 кв. одиниць"],
               correct: 2,
               explain: {
@@ -149,7 +189,14 @@ const LESSON_DATA = {
           `,
           questions: [
             {
-              prompt: "L-фігура складається з двох прямокутників: один 4×3, другий 2×5. Яка загальна площа?",
+              prompt: `<svg viewBox="0 0 95 145" xmlns="http://www.w3.org/2000/svg" style="display:block;margin:8px auto;max-width:120px">
+  <polygon points="10,10 36,10 36,75 62,75 62,114 10,114" fill="#E8F8F3" stroke="#2D9B7C" stroke-width="2" fill-rule="nonzero"/>
+  <line x1="36" y1="10" x2="36" y2="75" stroke="#D4A23C" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="23" y="7" text-anchor="middle" fill="#1B2A4A" font-size="10" font-family="sans-serif">2</text>
+  <text x="49" y="137" text-anchor="middle" fill="#1B2A4A" font-size="10" font-family="sans-serif">4</text>
+  <text x="5" y="44" text-anchor="end" fill="#1B2A4A" font-size="10" font-family="sans-serif">5</text>
+  <text x="68" y="96" text-anchor="start" fill="#1B2A4A" font-size="10" font-family="sans-serif">3</text>
+</svg>Яка загальна площа цієї фігури?`,
               options: ["22 кв. одиниць", "28 кв. одиниць", "14 кв. одиниць", "26 кв. одиниць"],
               correct: 0,
               explain: {
@@ -160,7 +207,17 @@ const LESSON_DATA = {
               solution: "4 × 3 = 12; 2 × 5 = 10; 12 + 10 = 22 кв. одиниць."
             },
             {
-              prompt: "Складна фігура: великий прямокутник 6×5, з нього «вирізаний» куток 2×3. Яка площа фігури?",
+              prompt: `<svg viewBox="0 0 120 115" xmlns="http://www.w3.org/2000/svg" style="display:block;margin:8px auto;max-width:150px">
+  <polygon points="10,10 94,10 94,46 66,46 66,88 10,88" fill="#E8F8F3" stroke="#2D9B7C" stroke-width="2"/>
+  <line x1="66" y1="10" x2="66" y2="46" stroke="#D4A23C" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <line x1="66" y1="46" x2="94" y2="46" stroke="#D4A23C" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="52" y="6" text-anchor="middle" fill="#1B2A4A" font-size="10" font-family="sans-serif">6</text>
+  <text x="52" y="102" text-anchor="middle" fill="#1B2A4A" font-size="10" font-family="sans-serif">4</text>
+  <text x="5" y="50" text-anchor="end" fill="#1B2A4A" font-size="10" font-family="sans-serif">5</text>
+  <text x="99" y="30" text-anchor="start" fill="#E8704A" font-size="10" font-family="sans-serif">3</text>
+  <text x="80" y="6" text-anchor="middle" fill="#E8704A" font-size="10" font-family="sans-serif">2</text>
+  <text x="80" y="35" text-anchor="middle" fill="#E8704A" font-size="9" font-family="sans-serif" font-style="italic">куток</text>
+</svg>Яка площа цієї фігури?`,
               options: ["24 кв. одиниць", "30 кв. одиниць", "20 кв. одиниць", "18 кв. одиниць"],
               correct: 0,
               explain: {
@@ -171,7 +228,14 @@ const LESSON_DATA = {
               solution: "Площа великого прямокутника: 6×5=30. Вирізаний куток: 2×3=6. 30−6=24 кв. одиниць."
             },
             {
-              prompt: "L-фігура: верхній прямокутник 3×3, нижній 7×2. Яка площа?",
+              prompt: `<svg viewBox="0 0 115 90" xmlns="http://www.w3.org/2000/svg" style="display:block;margin:8px auto;max-width:145px">
+  <polygon points="10,10 46,10 46,46 94,46 94,70 10,70" fill="#E8F8F3" stroke="#2D9B7C" stroke-width="2"/>
+  <line x1="46" y1="10" x2="46" y2="46" stroke="#D4A23C" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="28" y="7" text-anchor="middle" fill="#1B2A4A" font-size="10" font-family="sans-serif">3</text>
+  <text x="52" y="84" text-anchor="middle" fill="#1B2A4A" font-size="10" font-family="sans-serif">7</text>
+  <text x="5" y="30" text-anchor="end" fill="#1B2A4A" font-size="10" font-family="sans-serif">3</text>
+  <text x="99" y="60" text-anchor="start" fill="#1B2A4A" font-size="10" font-family="sans-serif">2</text>
+</svg>Яка загальна площа цієї фігури?`,
               options: ["15 кв. одиниць", "23 кв. одиниць", "19 кв. одиниць", "30 кв. одиниць"],
               correct: 1,
               explain: {
@@ -221,7 +285,14 @@ const LESSON_DATA = {
           `,
           questions: [
             {
-              prompt: "Периметр прямокутника = 30 см. Три відомі сторони: 9 см, 9 см, 6 см. Яка четверта сторона?",
+              prompt: `<svg viewBox="0 0 200 110" xmlns="http://www.w3.org/2000/svg" style="display:block;margin:8px auto;max-width:220px">
+  <rect x="40" y="15" width="120" height="70" fill="#E8F8F3" stroke="#2D9B7C" stroke-width="2" rx="2"/>
+  <text x="100" y="11" text-anchor="middle" fill="#1B2A4A" font-size="12" font-family="sans-serif">9 см</text>
+  <text x="100" y="102" text-anchor="middle" fill="#1B2A4A" font-size="12" font-family="sans-serif">9 см</text>
+  <text x="32" y="53" text-anchor="end" fill="#1B2A4A" font-size="12" font-family="sans-serif">6 см</text>
+  <text x="168" y="53" text-anchor="start" fill="#E8704A" font-size="16" font-family="sans-serif" font-weight="bold">?</text>
+  <text x="185" y="4" text-anchor="end" fill="#1B2A4A" font-size="10" font-family="sans-serif" font-style="italic">P = 30 см</text>
+</svg>Яка четверта сторона?`,
               options: ["15 см", "6 см", "10 см", "12 см"],
               correct: 1,
               explain: {
@@ -232,7 +303,14 @@ const LESSON_DATA = {
               solution: "9+9+6=24; 30−24=6 см."
             },
             {
-              prompt: "Прямокутник має периметр 26 м. Дві відомі сторони: 8 м і 8 м. Яка ширина?",
+              prompt: `<svg viewBox="0 0 200 110" xmlns="http://www.w3.org/2000/svg" style="display:block;margin:8px auto;max-width:220px">
+  <rect x="40" y="15" width="120" height="70" fill="#E8F8F3" stroke="#2D9B7C" stroke-width="2" rx="2"/>
+  <text x="100" y="11" text-anchor="middle" fill="#E8704A" font-size="16" font-family="sans-serif" font-weight="bold">?</text>
+  <text x="100" y="102" text-anchor="middle" fill="#E8704A" font-size="16" font-family="sans-serif" font-weight="bold">?</text>
+  <text x="32" y="53" text-anchor="end" fill="#1B2A4A" font-size="12" font-family="sans-serif">8 м</text>
+  <text x="168" y="53" text-anchor="start" fill="#1B2A4A" font-size="12" font-family="sans-serif">8 м</text>
+  <text x="185" y="4" text-anchor="end" fill="#1B2A4A" font-size="10" font-family="sans-serif" font-style="italic">P = 26 м</text>
+</svg>Яка ширина (сторони зі знаком «?»)?`,
               options: ["5 м", "10 м", "13 м", "3 м"],
               correct: 0,
               explain: {
@@ -254,7 +332,14 @@ const LESSON_DATA = {
               solution: "10+7+8+9=34; 40−34=6 см."
             },
             {
-              prompt: "Периметр квадрата = 36 см. Яка довжина однієї сторони?",
+              prompt: `<svg viewBox="0 0 150 130" xmlns="http://www.w3.org/2000/svg" style="display:block;margin:8px auto;max-width:160px">
+  <rect x="30" y="20" width="90" height="90" fill="#E8F8F3" stroke="#2D9B7C" stroke-width="2" rx="2"/>
+  <text x="75" y="15" text-anchor="middle" fill="#E8704A" font-size="14" font-family="sans-serif" font-weight="bold">?</text>
+  <text x="75" y="125" text-anchor="middle" fill="#E8704A" font-size="14" font-family="sans-serif" font-weight="bold">?</text>
+  <text x="22" y="68" text-anchor="end" fill="#E8704A" font-size="14" font-family="sans-serif" font-weight="bold">?</text>
+  <text x="128" y="68" text-anchor="start" fill="#E8704A" font-size="14" font-family="sans-serif" font-weight="bold">?</text>
+  <text x="75" y="72" text-anchor="middle" fill="#1B2A4A" font-size="11" font-family="sans-serif" font-style="italic">P = 36 см</text>
+</svg>Яка довжина однієї сторони квадрата?`,
               options: ["12 см", "18 см", "9 см", "6 см"],
               correct: 2,
               explain: {
