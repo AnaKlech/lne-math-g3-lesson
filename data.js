@@ -21,6 +21,18 @@ const LESSON_DATA = {
           theory: `
             <p>Щоб знайти площу прямокутника на сітці, <strong>підрахуй кількість квадратів у одному рядку (стовпці) і помнож на кількість рядків (стовпців)</strong>.</p>
             <p>Приклад: прямокутник має <strong>4 стовпці</strong> та <strong>3 рядки</strong>.</p>
+            <svg viewBox="0 0 200 130" xmlns="http://www.w3.org/2000/svg" style="display:block;margin:10px auto;max-width:220px">
+              <rect x="30" y="10" width="120" height="90" fill="#E8F8F3" stroke="#2D9B7C" stroke-width="2"/>
+              <line x1="60" y1="10" x2="60" y2="100" stroke="#2D9B7C" stroke-width="1"/>
+              <line x1="90" y1="10" x2="90" y2="100" stroke="#2D9B7C" stroke-width="1"/>
+              <line x1="120" y1="10" x2="120" y2="100" stroke="#2D9B7C" stroke-width="1"/>
+              <line x1="30" y1="40" x2="150" y2="40" stroke="#2D9B7C" stroke-width="1"/>
+              <line x1="30" y1="70" x2="150" y2="70" stroke="#2D9B7C" stroke-width="1"/>
+              <text x="90" y="6" text-anchor="middle" fill="#1B2A4A" font-size="11" font-family="sans-serif">4 стовпці →</text>
+              <text x="22" y="55" text-anchor="middle" fill="#1B2A4A" font-size="10" font-family="sans-serif" transform="rotate(-90 22 55)">3 рядки</text>
+              <text x="90" y="58" text-anchor="middle" fill="#E8704A" font-size="13" font-family="sans-serif" font-weight="bold">4 × 3 = 12</text>
+              <text x="90" y="74" text-anchor="middle" fill="#E8704A" font-size="11" font-family="sans-serif">кв. одиниць</text>
+            </svg>
             <p>Крок 1: у одному рядку — 4 квадрати.</p>
             <p>Крок 2: таких рядків — 3.</p>
             <p>Крок 3: <span class="formula">4 × 3 = 12</span> квадратних одиниць.</p>
@@ -96,6 +108,14 @@ const LESSON_DATA = {
           subtitle: "Ділимо складну фігуру на прямокутники",
           reference: `
             <p><strong>Складна фігура</strong> (L-подібна, T-подібна) — це фігура, яка не є простим прямокутником.</p>
+            <svg viewBox="0 0 160 130" xmlns="http://www.w3.org/2000/svg" style="display:block;margin:10px auto;max-width:160px">
+              <rect x="10" y="10" width="100" height="40" fill="#E8F8F3" stroke="#2D9B7C" stroke-width="2" rx="2"/>
+              <rect x="10" y="50" width="60" height="70" fill="#E8F8F3" stroke="#2D9B7C" stroke-width="2" rx="2"/>
+              <text x="60" y="32" text-anchor="middle" fill="#1B2A4A" font-size="11" font-family="sans-serif">верхня частина</text>
+              <text x="40" y="88" text-anchor="middle" fill="#1B2A4A" font-size="11" font-family="sans-serif">нижня</text>
+              <text x="40" y="102" text-anchor="middle" fill="#1B2A4A" font-size="11" font-family="sans-serif">частина</text>
+              <text x="60" y="120" text-anchor="middle" fill="#1B2A4A" font-size="10" font-family="sans-serif" font-style="italic">L-подібна фігура</text>
+            </svg>
             <p>Щоб знайти її площу, <strong>розбий на два прямокутники</strong>, знайди площу кожного окремо, а потім <strong>склади</strong>.</p>
             <p>Можна ділити по-різному — результат завжди однаковий.</p>
           `,
@@ -104,7 +124,26 @@ const LESSON_DATA = {
             <p>Крок 1: проведи лінію, яка ділить фігуру на <strong>два прямокутники</strong>.</p>
             <p>Крок 2: знайди площу кожного прямокутника окремо.</p>
             <p>Крок 3: <strong>склади</strong> обидві площі.</p>
-            <p>Приклад: L-фігура. Верхня частина: 5 × 2 = 10 кв. од. Нижня частина: 3 × 4 = 12 кв. од.</p>
+            <svg viewBox="0 0 210 160" xmlns="http://www.w3.org/2000/svg" style="display:block;margin:12px auto;max-width:240px">
+              <rect x="10" y="10" width="100" height="40" fill="#E8F8F3" stroke="#2D9B7C" stroke-width="2"/>
+              <line x1="30" y1="10" x2="30" y2="50" stroke="#2D9B7C" stroke-width="0.7" opacity="0.5"/>
+              <line x1="50" y1="10" x2="50" y2="50" stroke="#2D9B7C" stroke-width="0.7" opacity="0.5"/>
+              <line x1="70" y1="10" x2="70" y2="50" stroke="#2D9B7C" stroke-width="0.7" opacity="0.5"/>
+              <line x1="90" y1="10" x2="90" y2="50" stroke="#2D9B7C" stroke-width="0.7" opacity="0.5"/>
+              <line x1="10" y1="30" x2="110" y2="30" stroke="#2D9B7C" stroke-width="0.7" opacity="0.5"/>
+              <text x="60" y="33" text-anchor="middle" fill="#1B2A4A" font-size="10" font-family="sans-serif" font-weight="bold">5 × 2 = 10</text>
+              <rect x="10" y="50" width="60" height="80" fill="#D4EEE6" stroke="#2D9B7C" stroke-width="2"/>
+              <line x1="30" y1="50" x2="30" y2="130" stroke="#2D9B7C" stroke-width="0.7" opacity="0.5"/>
+              <line x1="50" y1="50" x2="50" y2="130" stroke="#2D9B7C" stroke-width="0.7" opacity="0.5"/>
+              <line x1="10" y1="70" x2="70" y2="70" stroke="#2D9B7C" stroke-width="0.7" opacity="0.5"/>
+              <line x1="10" y1="90" x2="70" y2="90" stroke="#2D9B7C" stroke-width="0.7" opacity="0.5"/>
+              <line x1="10" y1="110" x2="70" y2="110" stroke="#2D9B7C" stroke-width="0.7" opacity="0.5"/>
+              <text x="40" y="94" text-anchor="middle" fill="#1B2A4A" font-size="10" font-family="sans-serif" font-weight="bold">3 × 4 = 12</text>
+              <line x1="70" y1="50" x2="110" y2="50" stroke="#D4A23C" stroke-width="2" stroke-dasharray="5,3"/>
+              <text x="130" y="72" text-anchor="start" fill="#E8704A" font-size="13" font-family="sans-serif" font-weight="bold">10 + 12</text>
+              <text x="130" y="90" text-anchor="start" fill="#E8704A" font-size="13" font-family="sans-serif" font-weight="bold">= 22</text>
+              <text x="130" y="106" text-anchor="start" fill="#E8704A" font-size="10" font-family="sans-serif">кв. одиниць</text>
+            </svg>
             <p>Загальна площа: <span class="formula">10 + 12 = 22 кв. одиниці</span>.</p>
             <div class="warn">⚠️ Найчастіша помилка: брати розміри ВСІЄЇ фігури і множити — так не вийде, бо кут «вирізаний».</div>
           `,
@@ -634,13 +673,43 @@ const LESSON_DATA = {
             <p>Щоб правильно читати точкову діаграму:</p>
             <p>Крок 1: для кожного числа на осі підрахуй кількість крапок над ним.</p>
             <p>Крок 2: кожна крапка = одне вимірювання. Якщо треба знайти суму — множ кожне значення на кількість крапок і склади.</p>
-            <p>Приклад: на діаграмі крапки над числами: 2 (одна крапка), 3 (дві крапки), 5 (одна крапка).</p>
+            <p>Приклад: на діаграмі крапки над числами 2, 3, 5:</p>
+            <svg viewBox="0 0 220 130" xmlns="http://www.w3.org/2000/svg" style="display:block;margin:10px auto;max-width:250px">
+              <line x1="20" y1="100" x2="200" y2="100" stroke="#1B2A4A" stroke-width="2"/>
+              <line x1="50" y1="95" x2="50" y2="105" stroke="#1B2A4A" stroke-width="1.5"/>
+              <text x="50" y="118" text-anchor="middle" fill="#1B2A4A" font-size="13" font-family="sans-serif">2</text>
+              <text x="50" y="128" text-anchor="middle" fill="#E8704A" font-size="9" font-family="sans-serif">×1=2</text>
+              <line x1="110" y1="95" x2="110" y2="105" stroke="#1B2A4A" stroke-width="1.5"/>
+              <text x="110" y="118" text-anchor="middle" fill="#1B2A4A" font-size="13" font-family="sans-serif">3</text>
+              <text x="110" y="128" text-anchor="middle" fill="#E8704A" font-size="9" font-family="sans-serif">×2=6</text>
+              <line x1="170" y1="95" x2="170" y2="105" stroke="#1B2A4A" stroke-width="1.5"/>
+              <text x="170" y="118" text-anchor="middle" fill="#1B2A4A" font-size="13" font-family="sans-serif">5</text>
+              <text x="170" y="128" text-anchor="middle" fill="#E8704A" font-size="9" font-family="sans-serif">×1=5</text>
+              <circle cx="50" cy="91" r="8" fill="#2D9B7C" stroke="#1B2A4A" stroke-width="1"/>
+              <circle cx="110" cy="91" r="8" fill="#2D9B7C" stroke="#1B2A4A" stroke-width="1"/>
+              <circle cx="110" cy="73" r="8" fill="#2D9B7C" stroke="#1B2A4A" stroke-width="1"/>
+              <circle cx="170" cy="91" r="8" fill="#2D9B7C" stroke="#1B2A4A" stroke-width="1"/>
+            </svg>
             <p>Сума: <span class="formula">2×1 + 3×2 + 5×1 = 2 + 6 + 5 = 13</span>.</p>
             <div class="warn">⚠️ Помилка: рахувати лише кількість різних значень, а не всі крапки. Два числа 3 (дві крапки) дають 3+3=6, а не просто «3».</div>
           `,
           questions: [
             {
-              prompt: "На точковій діаграмі: над числом 4 — 3 крапки, над числом 6 — 2 крапки, над числом 8 — 1 крапка. Яка загальна сума всіх значень?",
+              prompt: `<svg viewBox="0 0 220 130" xmlns="http://www.w3.org/2000/svg" style="display:block;margin:8px auto;max-width:260px">
+  <line x1="20" y1="105" x2="200" y2="105" stroke="#1B2A4A" stroke-width="2"/>
+  <line x1="50" y1="100" x2="50" y2="110" stroke="#1B2A4A" stroke-width="1.5"/>
+  <text x="50" y="122" text-anchor="middle" fill="#1B2A4A" font-size="14" font-family="sans-serif">4</text>
+  <line x1="110" y1="100" x2="110" y2="110" stroke="#1B2A4A" stroke-width="1.5"/>
+  <text x="110" y="122" text-anchor="middle" fill="#1B2A4A" font-size="14" font-family="sans-serif">6</text>
+  <line x1="170" y1="100" x2="170" y2="110" stroke="#1B2A4A" stroke-width="1.5"/>
+  <text x="170" y="122" text-anchor="middle" fill="#1B2A4A" font-size="14" font-family="sans-serif">8</text>
+  <circle cx="50" cy="96" r="8" fill="#2D9B7C" stroke="#1B2A4A" stroke-width="1"/>
+  <circle cx="50" cy="78" r="8" fill="#2D9B7C" stroke="#1B2A4A" stroke-width="1"/>
+  <circle cx="50" cy="60" r="8" fill="#2D9B7C" stroke="#1B2A4A" stroke-width="1"/>
+  <circle cx="110" cy="96" r="8" fill="#2D9B7C" stroke="#1B2A4A" stroke-width="1"/>
+  <circle cx="110" cy="78" r="8" fill="#2D9B7C" stroke="#1B2A4A" stroke-width="1"/>
+  <circle cx="170" cy="96" r="8" fill="#2D9B7C" stroke="#1B2A4A" stroke-width="1"/>
+</svg>Яка загальна сума всіх значень на діаграмі?`,
               options: ["18", "30", "24", "32"],
               correct: 3,
               explain: {
@@ -651,7 +720,24 @@ const LESSON_DATA = {
               solution: "4×3=12; 6×2=12; 8×1=8; 12+12+8=32."
             },
             {
-              prompt: "Скільки ВСЬОГО вимірювань (крапок) на діаграмі: над числом 1 — 4 крапки, над числом 3 — 2 крапки, над числом 5 — 3 крапки?",
+              prompt: `<svg viewBox="0 0 220 145" xmlns="http://www.w3.org/2000/svg" style="display:block;margin:8px auto;max-width:260px">
+  <line x1="20" y1="115" x2="200" y2="115" stroke="#1B2A4A" stroke-width="2"/>
+  <line x1="50" y1="110" x2="50" y2="120" stroke="#1B2A4A" stroke-width="1.5"/>
+  <text x="50" y="132" text-anchor="middle" fill="#1B2A4A" font-size="14" font-family="sans-serif">1</text>
+  <line x1="110" y1="110" x2="110" y2="120" stroke="#1B2A4A" stroke-width="1.5"/>
+  <text x="110" y="132" text-anchor="middle" fill="#1B2A4A" font-size="14" font-family="sans-serif">3</text>
+  <line x1="170" y1="110" x2="170" y2="120" stroke="#1B2A4A" stroke-width="1.5"/>
+  <text x="170" y="132" text-anchor="middle" fill="#1B2A4A" font-size="14" font-family="sans-serif">5</text>
+  <circle cx="50" cy="106" r="8" fill="#2D9B7C" stroke="#1B2A4A" stroke-width="1"/>
+  <circle cx="50" cy="88" r="8" fill="#2D9B7C" stroke="#1B2A4A" stroke-width="1"/>
+  <circle cx="50" cy="70" r="8" fill="#2D9B7C" stroke="#1B2A4A" stroke-width="1"/>
+  <circle cx="50" cy="52" r="8" fill="#2D9B7C" stroke="#1B2A4A" stroke-width="1"/>
+  <circle cx="110" cy="106" r="8" fill="#2D9B7C" stroke="#1B2A4A" stroke-width="1"/>
+  <circle cx="110" cy="88" r="8" fill="#2D9B7C" stroke="#1B2A4A" stroke-width="1"/>
+  <circle cx="170" cy="106" r="8" fill="#2D9B7C" stroke="#1B2A4A" stroke-width="1"/>
+  <circle cx="170" cy="88" r="8" fill="#2D9B7C" stroke="#1B2A4A" stroke-width="1"/>
+  <circle cx="170" cy="70" r="8" fill="#2D9B7C" stroke="#1B2A4A" stroke-width="1"/>
+</svg>Скільки ВСЬОГО крапок (вимірювань) на цій діаграмі?`,
               options: ["3", "9", "15", "12"],
               correct: 1,
               explain: {
@@ -662,7 +748,26 @@ const LESSON_DATA = {
               solution: "4+2+3=9 крапок (вимірювань) всього."
             },
             {
-              prompt: "На точковій діаграмі квасоля: над 2 — 5 крапок, над 3 — 3 крапки, над 4 — 2 крапки. Яка загальна кількість квасолин у всіх пакетах?",
+              prompt: `<svg viewBox="0 0 220 165" xmlns="http://www.w3.org/2000/svg" style="display:block;margin:8px auto;max-width:260px">
+  <line x1="20" y1="130" x2="200" y2="130" stroke="#1B2A4A" stroke-width="2"/>
+  <line x1="50" y1="125" x2="50" y2="135" stroke="#1B2A4A" stroke-width="1.5"/>
+  <text x="50" y="148" text-anchor="middle" fill="#1B2A4A" font-size="14" font-family="sans-serif">2</text>
+  <line x1="110" y1="125" x2="110" y2="135" stroke="#1B2A4A" stroke-width="1.5"/>
+  <text x="110" y="148" text-anchor="middle" fill="#1B2A4A" font-size="14" font-family="sans-serif">3</text>
+  <line x1="170" y1="125" x2="170" y2="135" stroke="#1B2A4A" stroke-width="1.5"/>
+  <text x="170" y="148" text-anchor="middle" fill="#1B2A4A" font-size="14" font-family="sans-serif">4</text>
+  <text x="110" y="160" text-anchor="middle" fill="#1B2A4A" font-size="10" font-family="sans-serif" font-style="italic">кількість квасолин у пакеті</text>
+  <circle cx="50" cy="121" r="8" fill="#2D9B7C" stroke="#1B2A4A" stroke-width="1"/>
+  <circle cx="50" cy="103" r="8" fill="#2D9B7C" stroke="#1B2A4A" stroke-width="1"/>
+  <circle cx="50" cy="85" r="8" fill="#2D9B7C" stroke="#1B2A4A" stroke-width="1"/>
+  <circle cx="50" cy="67" r="8" fill="#2D9B7C" stroke="#1B2A4A" stroke-width="1"/>
+  <circle cx="50" cy="49" r="8" fill="#2D9B7C" stroke="#1B2A4A" stroke-width="1"/>
+  <circle cx="110" cy="121" r="8" fill="#2D9B7C" stroke="#1B2A4A" stroke-width="1"/>
+  <circle cx="110" cy="103" r="8" fill="#2D9B7C" stroke="#1B2A4A" stroke-width="1"/>
+  <circle cx="110" cy="85" r="8" fill="#2D9B7C" stroke="#1B2A4A" stroke-width="1"/>
+  <circle cx="170" cy="121" r="8" fill="#2D9B7C" stroke="#1B2A4A" stroke-width="1"/>
+  <circle cx="170" cy="103" r="8" fill="#2D9B7C" stroke="#1B2A4A" stroke-width="1"/>
+</svg>Яка загальна кількість квасолин у всіх пакетах?`,
               options: ["25", "27", "9", "20"],
               correct: 1,
               explain: {
@@ -673,7 +778,22 @@ const LESSON_DATA = {
               solution: "2×5=10; 3×3=9; 4×2=8; 10+9+8=27 квасолин всього."
             },
             {
-              prompt: "На точковій діаграмі: над числом 5 — 2 крапки, над 7 — 4 крапки, над 9 — 1 крапка. Яке значення зустрічається НАЙЧАСТІШЕ?",
+              prompt: `<svg viewBox="0 0 220 145" xmlns="http://www.w3.org/2000/svg" style="display:block;margin:8px auto;max-width:260px">
+  <line x1="20" y1="115" x2="200" y2="115" stroke="#1B2A4A" stroke-width="2"/>
+  <line x1="50" y1="110" x2="50" y2="120" stroke="#1B2A4A" stroke-width="1.5"/>
+  <text x="50" y="132" text-anchor="middle" fill="#1B2A4A" font-size="14" font-family="sans-serif">5</text>
+  <line x1="110" y1="110" x2="110" y2="120" stroke="#1B2A4A" stroke-width="1.5"/>
+  <text x="110" y="132" text-anchor="middle" fill="#1B2A4A" font-size="14" font-family="sans-serif">7</text>
+  <line x1="170" y1="110" x2="170" y2="120" stroke="#1B2A4A" stroke-width="1.5"/>
+  <text x="170" y="132" text-anchor="middle" fill="#1B2A4A" font-size="14" font-family="sans-serif">9</text>
+  <circle cx="50" cy="106" r="8" fill="#2D9B7C" stroke="#1B2A4A" stroke-width="1"/>
+  <circle cx="50" cy="88" r="8" fill="#2D9B7C" stroke="#1B2A4A" stroke-width="1"/>
+  <circle cx="110" cy="106" r="8" fill="#2D9B7C" stroke="#1B2A4A" stroke-width="1"/>
+  <circle cx="110" cy="88" r="8" fill="#2D9B7C" stroke="#1B2A4A" stroke-width="1"/>
+  <circle cx="110" cy="70" r="8" fill="#2D9B7C" stroke="#1B2A4A" stroke-width="1"/>
+  <circle cx="110" cy="52" r="8" fill="#2D9B7C" stroke="#1B2A4A" stroke-width="1"/>
+  <circle cx="170" cy="106" r="8" fill="#2D9B7C" stroke="#1B2A4A" stroke-width="1"/>
+</svg>Яке значення зустрічається НАЙЧАСТІШЕ?`,
               options: ["5", "9", "7", "Всі однаково"],
               correct: 2,
               explain: {
@@ -705,7 +825,19 @@ const LESSON_DATA = {
           `,
           questions: [
             {
-              prompt: "На стовпчастій діаграмі шкала по 5 (0, 5, 10, 15…). Стовпець «Яблука» доходить до третьої лінії. Скільки яблук?",
+              prompt: `<svg viewBox="0 0 180 170" xmlns="http://www.w3.org/2000/svg" style="display:block;margin:8px auto;max-width:200px">
+  <line x1="45" y1="20" x2="45" y2="140" stroke="#1B2A4A" stroke-width="2"/>
+  <line x1="45" y1="140" x2="150" y2="140" stroke="#1B2A4A" stroke-width="2"/>
+  <line x1="40" y1="140" x2="45" y2="140" stroke="#1B2A4A" stroke-width="1"/><text x="36" y="144" text-anchor="end" fill="#1B2A4A" font-size="11" font-family="sans-serif">0</text>
+  <line x1="40" y1="110" x2="45" y2="110" stroke="#1B2A4A" stroke-width="1"/><text x="36" y="114" text-anchor="end" fill="#1B2A4A" font-size="11" font-family="sans-serif">5</text>
+  <line x1="40" y1="80" x2="45" y2="80" stroke="#1B2A4A" stroke-width="1"/><text x="34" y="84" text-anchor="end" fill="#1B2A4A" font-size="11" font-family="sans-serif">10</text>
+  <line x1="40" y1="50" x2="45" y2="50" stroke="#1B2A4A" stroke-width="1"/><text x="34" y="54" text-anchor="end" fill="#1B2A4A" font-size="11" font-family="sans-serif">15</text>
+  <line x1="45" y1="110" x2="150" y2="110" stroke="#1B2A4A" stroke-width="0.5" opacity="0.3"/>
+  <line x1="45" y1="80" x2="150" y2="80" stroke="#1B2A4A" stroke-width="0.5" opacity="0.3"/>
+  <line x1="45" y1="50" x2="150" y2="50" stroke="#1B2A4A" stroke-width="0.5" opacity="0.3"/>
+  <rect x="70" y="50" width="50" height="90" fill="#2D9B7C" stroke="#1B2A4A" stroke-width="1"/>
+  <text x="95" y="158" text-anchor="middle" fill="#1B2A4A" font-size="11" font-family="sans-serif">Яблука</text>
+</svg>Скільки яблук показує діаграма?`,
               options: ["3", "5", "15", "10"],
               correct: 2,
               explain: {
@@ -716,7 +848,26 @@ const LESSON_DATA = {
               solution: "Шкала: 0, 5, 10, 15. Третя лінія = 15 яблук."
             },
             {
-              prompt: "За діаграмою: у понеділок — 8 книг, у вівторок — 12, в середу — 6. На скільки більше книг у вівторок, ніж у середу?",
+              prompt: `<svg viewBox="0 0 220 175" xmlns="http://www.w3.org/2000/svg" style="display:block;margin:8px auto;max-width:240px">
+  <line x1="45" y1="20" x2="45" y2="145" stroke="#1B2A4A" stroke-width="2"/>
+  <line x1="45" y1="145" x2="200" y2="145" stroke="#1B2A4A" stroke-width="2"/>
+  <line x1="40" y1="145" x2="45" y2="145" stroke="#1B2A4A" stroke-width="1"/><text x="36" y="149" text-anchor="end" fill="#1B2A4A" font-size="10" font-family="sans-serif">0</text>
+  <line x1="40" y1="125" x2="45" y2="125" stroke="#1B2A4A" stroke-width="1"/><text x="36" y="129" text-anchor="end" fill="#1B2A4A" font-size="10" font-family="sans-serif">2</text>
+  <line x1="40" y1="105" x2="45" y2="105" stroke="#1B2A4A" stroke-width="1"/><text x="36" y="109" text-anchor="end" fill="#1B2A4A" font-size="10" font-family="sans-serif">4</text>
+  <line x1="40" y1="85" x2="45" y2="85" stroke="#1B2A4A" stroke-width="1"/><text x="36" y="89" text-anchor="end" fill="#1B2A4A" font-size="10" font-family="sans-serif">6</text>
+  <line x1="40" y1="65" x2="45" y2="65" stroke="#1B2A4A" stroke-width="1"/><text x="36" y="69" text-anchor="end" fill="#1B2A4A" font-size="10" font-family="sans-serif">8</text>
+  <line x1="40" y1="45" x2="45" y2="45" stroke="#1B2A4A" stroke-width="1"/><text x="34" y="49" text-anchor="end" fill="#1B2A4A" font-size="10" font-family="sans-serif">10</text>
+  <line x1="40" y1="25" x2="45" y2="25" stroke="#1B2A4A" stroke-width="1"/><text x="34" y="29" text-anchor="end" fill="#1B2A4A" font-size="10" font-family="sans-serif">12</text>
+  <line x1="45" y1="65" x2="200" y2="65" stroke="#1B2A4A" stroke-width="0.5" opacity="0.3"/>
+  <line x1="45" y1="25" x2="200" y2="25" stroke="#1B2A4A" stroke-width="0.5" opacity="0.3"/>
+  <rect x="58" y="65" width="35" height="80" fill="#2D9B7C" stroke="#1B2A4A" stroke-width="1"/>
+  <text x="75" y="162" text-anchor="middle" fill="#1B2A4A" font-size="10" font-family="sans-serif">Пн</text>
+  <rect x="108" y="25" width="35" height="120" fill="#E8704A" stroke="#1B2A4A" stroke-width="1"/>
+  <text x="125" y="162" text-anchor="middle" fill="#1B2A4A" font-size="10" font-family="sans-serif">Вт</text>
+  <rect x="158" y="85" width="35" height="60" fill="#2D9B7C" stroke="#1B2A4A" stroke-width="1"/>
+  <text x="175" y="162" text-anchor="middle" fill="#1B2A4A" font-size="10" font-family="sans-serif">Ср</text>
+  <text x="125" y="173" text-anchor="middle" fill="#1B2A4A" font-size="9" font-family="sans-serif" font-style="italic">книги здано до бібліотеки</text>
+</svg>На скільки більше книг здали у вівторок, ніж у середу?`,
               options: ["18", "6", "4", "2"],
               correct: 1,
               explain: {
@@ -727,7 +878,26 @@ const LESSON_DATA = {
               solution: "12 − 6 = 6 книг."
             },
             {
-              prompt: "У діаграмі бракує стовпця. Відомо: всього 30 голосів, «Кіт» — 12, «Собака» — 10. Скільки голосів отримала «Черепаха»?",
+              prompt: `<svg viewBox="0 0 240 185" xmlns="http://www.w3.org/2000/svg" style="display:block;margin:8px auto;max-width:260px">
+  <line x1="45" y1="20" x2="45" y2="150" stroke="#1B2A4A" stroke-width="2"/>
+  <line x1="45" y1="150" x2="220" y2="150" stroke="#1B2A4A" stroke-width="2"/>
+  <line x1="40" y1="150" x2="45" y2="150" stroke="#1B2A4A" stroke-width="1"/><text x="36" y="154" text-anchor="end" fill="#1B2A4A" font-size="10" font-family="sans-serif">0</text>
+  <line x1="40" y1="110" x2="45" y2="110" stroke="#1B2A4A" stroke-width="1"/><text x="36" y="114" text-anchor="end" fill="#1B2A4A" font-size="10" font-family="sans-serif">5</text>
+  <line x1="40" y1="70" x2="45" y2="70" stroke="#1B2A4A" stroke-width="1"/><text x="34" y="74" text-anchor="end" fill="#1B2A4A" font-size="10" font-family="sans-serif">10</text>
+  <line x1="40" y1="30" x2="45" y2="30" stroke="#1B2A4A" stroke-width="1"/><text x="34" y="34" text-anchor="end" fill="#1B2A4A" font-size="10" font-family="sans-serif">15</text>
+  <line x1="45" y1="110" x2="220" y2="110" stroke="#1B2A4A" stroke-width="0.5" opacity="0.3"/>
+  <line x1="45" y1="70" x2="220" y2="70" stroke="#1B2A4A" stroke-width="0.5" opacity="0.3"/>
+  <line x1="45" y1="30" x2="220" y2="30" stroke="#1B2A4A" stroke-width="0.5" opacity="0.3"/>
+  <rect x="58" y="54" width="38" height="96" fill="#2D9B7C" stroke="#1B2A4A" stroke-width="1"/>
+  <text x="77" y="168" text-anchor="middle" fill="#1B2A4A" font-size="10" font-family="sans-serif">Кіт</text>
+  <rect x="112" y="70" width="38" height="80" fill="#2D9B7C" stroke="#1B2A4A" stroke-width="1"/>
+  <text x="131" y="168" text-anchor="middle" fill="#1B2A4A" font-size="10" font-family="sans-serif">Собака</text>
+  <rect x="166" y="150" width="38" height="0" fill="none" stroke="#D4A23C" stroke-width="2" stroke-dasharray="4,3"/>
+  <rect x="166" y="80" width="38" height="70" fill="none" stroke="#D4A23C" stroke-width="2" stroke-dasharray="4,3"/>
+  <text x="185" y="118" text-anchor="middle" fill="#E8704A" font-size="18" font-family="sans-serif" font-weight="bold">?</text>
+  <text x="185" y="168" text-anchor="middle" fill="#1B2A4A" font-size="10" font-family="sans-serif">Черепаха</text>
+  <text x="133" y="180" text-anchor="middle" fill="#1B2A4A" font-size="9" font-family="sans-serif" font-style="italic">Всього голосів: 30</text>
+</svg>Скільки голосів отримала «Черепаха»?`,
               options: ["22", "8", "32", "2"],
               correct: 1,
               explain: {
@@ -738,7 +908,20 @@ const LESSON_DATA = {
               solution: "12+10=22; 30−22=8 голосів у черепахи."
             },
             {
-              prompt: "На шкалі: 0, 4, 8, 12, 16. Стовпець «Жовтий» доходить до позначки між 8 і 12. Яке найімовірніше значення?",
+              prompt: `<svg viewBox="0 0 180 175" xmlns="http://www.w3.org/2000/svg" style="display:block;margin:8px auto;max-width:200px">
+  <line x1="45" y1="20" x2="45" y2="145" stroke="#1B2A4A" stroke-width="2"/>
+  <line x1="45" y1="145" x2="155" y2="145" stroke="#1B2A4A" stroke-width="2"/>
+  <line x1="40" y1="145" x2="45" y2="145" stroke="#1B2A4A" stroke-width="1"/><text x="36" y="149" text-anchor="end" fill="#1B2A4A" font-size="10" font-family="sans-serif">0</text>
+  <line x1="40" y1="114" x2="45" y2="114" stroke="#1B2A4A" stroke-width="1"/><text x="36" y="118" text-anchor="end" fill="#1B2A4A" font-size="10" font-family="sans-serif">4</text>
+  <line x1="40" y1="83" x2="45" y2="83" stroke="#1B2A4A" stroke-width="1"/><text x="36" y="87" text-anchor="end" fill="#1B2A4A" font-size="10" font-family="sans-serif">8</text>
+  <line x1="40" y1="52" x2="45" y2="52" stroke="#1B2A4A" stroke-width="1"/><text x="34" y="56" text-anchor="end" fill="#1B2A4A" font-size="10" font-family="sans-serif">12</text>
+  <line x1="40" y1="21" x2="45" y2="21" stroke="#1B2A4A" stroke-width="1"/><text x="34" y="25" text-anchor="end" fill="#1B2A4A" font-size="10" font-family="sans-serif">16</text>
+  <line x1="45" y1="83" x2="155" y2="83" stroke="#1B2A4A" stroke-width="0.5" opacity="0.3"/>
+  <line x1="45" y1="52" x2="155" y2="52" stroke="#1B2A4A" stroke-width="0.5" opacity="0.3"/>
+  <rect x="70" y="68" width="50" height="77" fill="#D4A23C" stroke="#1B2A4A" stroke-width="1"/>
+  <text x="95" y="162" text-anchor="middle" fill="#1B2A4A" font-size="11" font-family="sans-serif">Жовтий</text>
+  <line x1="45" y1="68" x2="155" y2="68" stroke="#E8704A" stroke-width="1.5" stroke-dasharray="4,3"/>
+</svg>Стовпець «Жовтий» зупиняється між позначками 8 і 12. Яке найімовірніше значення?`,
               options: ["9", "10", "11", "3"],
               correct: 1,
               explain: {
