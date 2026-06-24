@@ -324,7 +324,7 @@ const LESSON_DATA = {
   <text x="100" y="102" text-anchor="middle" fill="#E8704A" font-size="16" font-family="sans-serif" font-weight="bold">?</text>
   <text x="32" y="53" text-anchor="end" fill="#1B2A4A" font-size="12" font-family="sans-serif">8 м</text>
   <text x="168" y="53" text-anchor="start" fill="#1B2A4A" font-size="12" font-family="sans-serif">8 м</text>
-  <text x="185" y="4" text-anchor="end" fill="#1B2A4A" font-size="10" font-family="sans-serif" font-style="italic">P = 26 м</text>
+  <text x="100" y="55" text-anchor="middle" fill="#1B2A4A" font-size="11" font-family="sans-serif" font-style="italic">P = 26 м</text>
 </svg>Яка ширина (сторони зі знаком «?»)?`,
               options: ["5 м", "10 м", "13 м", "3 м"],
               correct: 0,
