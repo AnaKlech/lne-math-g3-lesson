@@ -235,21 +235,21 @@ const LESSON_DATA = {
               solution: "Площа великого прямокутника: 6×5=30. Вирізаний куток: 2×3=6. 30−6=24 кв. одиниць."
             },
             {
-              prompt: `<svg viewBox="0 0 115 90" xmlns="http://www.w3.org/2000/svg" style="display:block;margin:8px auto;max-width:145px">
-  <rect x="10" y="10" width="36" height="36" fill="#E8F8F3"/>
-  <rect x="10" y="46" width="84" height="24" fill="#D4EEE6"/>
-  <polygon points="10,10 46,10 46,46 94,46 94,70 10,70" fill="none" stroke="#2D9B7C" stroke-width="2"/>
-  <line x1="10" y1="46" x2="46" y2="46" stroke="#D4A23C" stroke-width="1.5" stroke-dasharray="4,3"/>
-  <text x="28" y="7" text-anchor="middle" fill="#1B2A4A" font-size="11" font-family="sans-serif" font-weight="bold">3</text>
-  <line x1="3" y1="10" x2="8" y2="10" stroke="#1B2A4A" stroke-width="1.5"/>
-  <line x1="5" y1="10" x2="5" y2="46" stroke="#1B2A4A" stroke-width="1"/>
-  <line x1="3" y1="46" x2="8" y2="46" stroke="#1B2A4A" stroke-width="1.5"/>
-  <text x="1" y="31" text-anchor="end" fill="#1B2A4A" font-size="11" font-family="sans-serif" font-weight="bold">3</text>
-  <text x="52" y="85" text-anchor="middle" fill="#1B2A4A" font-size="11" font-family="sans-serif" font-weight="bold">7</text>
-  <line x1="96" y1="46" x2="101" y2="46" stroke="#1B2A4A" stroke-width="1.5"/>
-  <line x1="98" y1="46" x2="98" y2="70" stroke="#1B2A4A" stroke-width="1"/>
-  <line x1="96" y1="70" x2="101" y2="70" stroke="#1B2A4A" stroke-width="1.5"/>
-  <text x="103" y="60" text-anchor="start" fill="#1B2A4A" font-size="11" font-family="sans-serif" font-weight="bold">2</text>
+              prompt: `<svg viewBox="0 0 128 90" xmlns="http://www.w3.org/2000/svg" style="display:block;margin:8px auto;max-width:160px">
+  <rect x="22" y="10" width="36" height="36" fill="#E8F8F3"/>
+  <rect x="22" y="46" width="84" height="24" fill="#D4EEE6"/>
+  <polygon points="22,10 58,10 58,46 106,46 106,70 22,70" fill="none" stroke="#2D9B7C" stroke-width="2"/>
+  <line x1="22" y1="46" x2="58" y2="46" stroke="#D4A23C" stroke-width="1.5" stroke-dasharray="4,3"/>
+  <text x="40" y="7" text-anchor="middle" fill="#1B2A4A" font-size="11" font-family="sans-serif" font-weight="bold">3</text>
+  <line x1="15" y1="10" x2="20" y2="10" stroke="#1B2A4A" stroke-width="1.5"/>
+  <line x1="17" y1="10" x2="17" y2="46" stroke="#1B2A4A" stroke-width="1"/>
+  <line x1="15" y1="46" x2="20" y2="46" stroke="#1B2A4A" stroke-width="1.5"/>
+  <text x="13" y="31" text-anchor="end" fill="#1B2A4A" font-size="11" font-family="sans-serif" font-weight="bold">3</text>
+  <text x="64" y="85" text-anchor="middle" fill="#1B2A4A" font-size="11" font-family="sans-serif" font-weight="bold">7</text>
+  <line x1="108" y1="46" x2="113" y2="46" stroke="#1B2A4A" stroke-width="1.5"/>
+  <line x1="110" y1="46" x2="110" y2="70" stroke="#1B2A4A" stroke-width="1"/>
+  <line x1="108" y1="70" x2="113" y2="70" stroke="#1B2A4A" stroke-width="1.5"/>
+  <text x="115" y="60" text-anchor="start" fill="#1B2A4A" font-size="11" font-family="sans-serif" font-weight="bold">2</text>
 </svg>Яка загальна площа цієї фігури?`,
               options: ["15 кв. одиниць", "23 кв. одиниць", "19 кв. одиниць", "30 кв. одиниць"],
               correct: 1,
@@ -306,7 +306,7 @@ const LESSON_DATA = {
   <text x="100" y="102" text-anchor="middle" fill="#1B2A4A" font-size="12" font-family="sans-serif">9 см</text>
   <text x="32" y="53" text-anchor="end" fill="#1B2A4A" font-size="12" font-family="sans-serif">6 см</text>
   <text x="168" y="53" text-anchor="start" fill="#E8704A" font-size="16" font-family="sans-serif" font-weight="bold">?</text>
-  <text x="185" y="4" text-anchor="end" fill="#1B2A4A" font-size="10" font-family="sans-serif" font-style="italic">P = 30 см</text>
+  <text x="100" y="55" text-anchor="middle" fill="#1B2A4A" font-size="11" font-family="sans-serif" font-style="italic">P = 30 см</text>
 </svg>Яка четверта сторона?`,
               options: ["15 см", "6 см", "10 см", "12 см"],
               correct: 1,
@@ -499,7 +499,17 @@ const LESSON_DATA = {
               solution: "63 (загальне) ÷ 9 (гравців) = 7 (кожному). Перевірка: 7 × 9 = 63 ✓"
             },
             {
-              prompt: "Яке рівняння відповідає малюнку: 4 ряди по 8 зірочок?",
+              prompt: `<svg viewBox="0 0 158 84" xmlns="http://www.w3.org/2000/svg" style="display:block;margin:8px auto;max-width:190px">
+  <circle cx="12" cy="12" r="6" fill="#2D9B7C"/><circle cx="30" cy="12" r="6" fill="#2D9B7C"/><circle cx="48" cy="12" r="6" fill="#2D9B7C"/><circle cx="66" cy="12" r="6" fill="#2D9B7C"/><circle cx="84" cy="12" r="6" fill="#2D9B7C"/><circle cx="102" cy="12" r="6" fill="#2D9B7C"/><circle cx="120" cy="12" r="6" fill="#2D9B7C"/><circle cx="138" cy="12" r="6" fill="#2D9B7C"/>
+  <circle cx="12" cy="30" r="6" fill="#2D9B7C"/><circle cx="30" cy="30" r="6" fill="#2D9B7C"/><circle cx="48" cy="30" r="6" fill="#2D9B7C"/><circle cx="66" cy="30" r="6" fill="#2D9B7C"/><circle cx="84" cy="30" r="6" fill="#2D9B7C"/><circle cx="102" cy="30" r="6" fill="#2D9B7C"/><circle cx="120" cy="30" r="6" fill="#2D9B7C"/><circle cx="138" cy="30" r="6" fill="#2D9B7C"/>
+  <circle cx="12" cy="48" r="6" fill="#2D9B7C"/><circle cx="30" cy="48" r="6" fill="#2D9B7C"/><circle cx="48" cy="48" r="6" fill="#2D9B7C"/><circle cx="66" cy="48" r="6" fill="#2D9B7C"/><circle cx="84" cy="48" r="6" fill="#2D9B7C"/><circle cx="102" cy="48" r="6" fill="#2D9B7C"/><circle cx="120" cy="48" r="6" fill="#2D9B7C"/><circle cx="138" cy="48" r="6" fill="#2D9B7C"/>
+  <circle cx="12" cy="66" r="6" fill="#2D9B7C"/><circle cx="30" cy="66" r="6" fill="#2D9B7C"/><circle cx="48" cy="66" r="6" fill="#2D9B7C"/><circle cx="66" cy="66" r="6" fill="#2D9B7C"/><circle cx="84" cy="66" r="6" fill="#2D9B7C"/><circle cx="102" cy="66" r="6" fill="#2D9B7C"/><circle cx="120" cy="66" r="6" fill="#2D9B7C"/><circle cx="138" cy="66" r="6" fill="#2D9B7C"/>
+  <text x="150" y="16" text-anchor="start" fill="#1B2A4A" font-size="9" font-family="sans-serif">← 8</text>
+  <text x="150" y="30" text-anchor="start" fill="#1B2A4A" font-size="9" font-family="sans-serif">← 8</text>
+  <text x="150" y="44" text-anchor="start" fill="#1B2A4A" font-size="9" font-family="sans-serif">← 8</text>
+  <text x="150" y="58" text-anchor="start" fill="#1B2A4A" font-size="9" font-family="sans-serif">← 8</text>
+  <text x="75" y="81" text-anchor="middle" fill="#1B2A4A" font-size="9" font-family="sans-serif">4 ряди, 32 всього</text>
+</svg>Яке рівняння ділення описує цей малюнок?`,
               options: ["32 ÷ 8 = 4", "8 ÷ 4 = 2", "4 ÷ 8 = 2", "8 × 4 = 32"],
               correct: 0,
               explain: {
