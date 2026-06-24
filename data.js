@@ -640,6 +640,20 @@ const LESSON_DATA = {
             <p>Крок 2: якщо закрашена однакова частина — дроби еквівалентні.</p>
             <p>Крок 3: щоб знайти еквівалентний дріб числом — помнож (або подів) чисельник і знаменник на одне число.</p>
             <p>Приклад: <span class="formula">1/3</span> = ?/6. Знаменник ×2, тому чисельник теж ×2: <span class="formula">1×2 / 3×2 = 2/6</span>.</p>
+            <svg viewBox="0 0 215 70" xmlns="http://www.w3.org/2000/svg" style="display:block;margin:8px auto;max-width:215px">
+              <rect x="10" y="12" width="25" height="28" fill="#E8704A" stroke="#2D9B7C" stroke-width="1.5"/>
+              <rect x="35" y="12" width="25" height="28" fill="#E8F8F3" stroke="#2D9B7C" stroke-width="1.5"/>
+              <rect x="60" y="12" width="25" height="28" fill="#E8F8F3" stroke="#2D9B7C" stroke-width="1.5"/>
+              <text x="47" y="55" text-anchor="middle" fill="#1B2A4A" font-size="12" font-family="sans-serif" font-weight="bold">1/3</text>
+              <text x="98" y="30" text-anchor="middle" fill="#1B2A4A" font-size="18" font-family="sans-serif" font-weight="bold">=</text>
+              <rect x="120" y="12" width="14" height="28" fill="#E8704A" stroke="#2D9B7C" stroke-width="1.5"/>
+              <rect x="134" y="12" width="14" height="28" fill="#E8704A" stroke="#2D9B7C" stroke-width="1.5"/>
+              <rect x="148" y="12" width="14" height="28" fill="#E8F8F3" stroke="#2D9B7C" stroke-width="1.5"/>
+              <rect x="162" y="12" width="14" height="28" fill="#E8F8F3" stroke="#2D9B7C" stroke-width="1.5"/>
+              <rect x="176" y="12" width="14" height="28" fill="#E8F8F3" stroke="#2D9B7C" stroke-width="1.5"/>
+              <rect x="190" y="12" width="14" height="28" fill="#E8F8F3" stroke="#2D9B7C" stroke-width="1.5"/>
+              <text x="162" y="55" text-anchor="middle" fill="#1B2A4A" font-size="12" font-family="sans-serif" font-weight="bold">2/6</text>
+            </svg>
             <div class="warn">⚠️ Помилка: множити тільки знаменник, але залишити старий чисельник. Треба множити ОБИДВА числа на одне й те саме.</div>
           `,
           questions: [
@@ -677,7 +691,7 @@ const LESSON_DATA = {
               solution: "1/3 і 2/5 не є еквівалентними: 1×2=2 (чисельник), але 3×2=6≠5 (знаменник). Вони позначають різні частки від цілого."
             },
             {
-              prompt: "Прямокутник поділено на 4 рівні частини, закрашено 2. Який дріб записаний НА МАЛЮНКУ?",
+              prompt: `Який дріб записаний НА МАЛЮНКУ?<svg viewBox="0 0 160 70" xmlns="http://www.w3.org/2000/svg" style="display:block;margin:8px auto;max-width:180px"><rect x="10" y="15" width="33" height="38" fill="#E8704A" stroke="#2D9B7C" stroke-width="1.5"/><rect x="43" y="15" width="33" height="38" fill="#E8704A" stroke="#2D9B7C" stroke-width="1.5"/><rect x="76" y="15" width="33" height="38" fill="#E8F8F3" stroke="#2D9B7C" stroke-width="1.5"/><rect x="109" y="15" width="33" height="38" fill="#E8F8F3" stroke="#2D9B7C" stroke-width="1.5"/><text x="80" y="66" text-anchor="middle" fill="#1B2A4A" font-size="11" font-family="sans-serif">4 рівні частини, 2 закрашено</text></svg>`,
               options: ["1/4", "3/4", "1/2", "2/3"],
               correct: 2,
               explain: {
@@ -705,11 +719,27 @@ const LESSON_DATA = {
             <p>Приклад: на прямій, поділеній на 8 частин, яка точка збігається з 1/2?</p>
             <p>1/2 — це посередині. 4/8 теж посередині.</p>
             <p>Тому <span class="formula">1/2 = 4/8</span>.</p>
+            <svg viewBox="0 0 240 58" xmlns="http://www.w3.org/2000/svg" style="display:block;margin:8px auto;max-width:260px">
+              <line x1="20" y1="35" x2="220" y2="35" stroke="#1B2A4A" stroke-width="2"/>
+              <line x1="20" y1="27" x2="20" y2="43" stroke="#1B2A4A" stroke-width="2"/>
+              <line x1="220" y1="27" x2="220" y2="43" stroke="#1B2A4A" stroke-width="2"/>
+              <text x="20" y="54" text-anchor="middle" fill="#1B2A4A" font-size="11" font-family="sans-serif">0</text>
+              <text x="220" y="54" text-anchor="middle" fill="#1B2A4A" font-size="11" font-family="sans-serif">1</text>
+              <line x1="45" y1="30" x2="45" y2="40" stroke="#1B2A4A" stroke-width="1"/>
+              <line x1="70" y1="30" x2="70" y2="40" stroke="#1B2A4A" stroke-width="1"/>
+              <line x1="95" y1="30" x2="95" y2="40" stroke="#1B2A4A" stroke-width="1"/>
+              <line x1="120" y1="26" x2="120" y2="44" stroke="#2D9B7C" stroke-width="2"/>
+              <line x1="145" y1="30" x2="145" y2="40" stroke="#1B2A4A" stroke-width="1"/>
+              <line x1="170" y1="30" x2="170" y2="40" stroke="#1B2A4A" stroke-width="1"/>
+              <line x1="195" y1="30" x2="195" y2="40" stroke="#1B2A4A" stroke-width="1"/>
+              <circle cx="120" cy="35" r="5" fill="#E8704A"/>
+              <text x="120" y="20" text-anchor="middle" fill="#E8704A" font-size="10" font-family="sans-serif" font-weight="bold">1/2 = 4/8</text>
+            </svg>
             <div class="warn">⚠️ Помилка: рахувати поділки без урахування, на скільки частин поділена вся пряма. Спочатку визнач ціну однієї поділки.</div>
           `,
           questions: [
             {
-              prompt: "Числова пряма від 0 до 1 поділена на 6 рівних частин. Яка точка на ній збігається з 1/3?",
+              prompt: `Числова пряма від 0 до 1 поділена на 6 рівних частин. Яка точка на ній збігається з 1/3?<svg viewBox="0 0 220 58" xmlns="http://www.w3.org/2000/svg" style="display:block;margin:8px auto;max-width:240px"><line x1="20" y1="35" x2="200" y2="35" stroke="#1B2A4A" stroke-width="2"/><line x1="20" y1="27" x2="20" y2="43" stroke="#1B2A4A" stroke-width="2"/><line x1="200" y1="27" x2="200" y2="43" stroke="#1B2A4A" stroke-width="2"/><text x="20" y="54" text-anchor="middle" fill="#1B2A4A" font-size="11" font-family="sans-serif">0</text><text x="200" y="54" text-anchor="middle" fill="#1B2A4A" font-size="11" font-family="sans-serif">1</text><line x1="50" y1="30" x2="50" y2="40" stroke="#1B2A4A" stroke-width="1"/><line x1="80" y1="26" x2="80" y2="44" stroke="#2D9B7C" stroke-width="2"/><line x1="110" y1="30" x2="110" y2="40" stroke="#1B2A4A" stroke-width="1"/><line x1="140" y1="30" x2="140" y2="40" stroke="#1B2A4A" stroke-width="1"/><line x1="170" y1="30" x2="170" y2="40" stroke="#1B2A4A" stroke-width="1"/><circle cx="80" cy="35" r="5" fill="#E8704A"/><text x="80" y="20" text-anchor="middle" fill="#E8704A" font-size="10" font-family="sans-serif" font-weight="bold">1/3 = ?/6</text></svg>`,
               options: ["1/6", "3/6", "2/6", "4/6"],
               correct: 2,
               explain: {
@@ -720,7 +750,7 @@ const LESSON_DATA = {
               solution: "1/3: знаменник ×2 → 2/6. Точка 2/6 на числовій прямій збігається з 1/3."
             },
             {
-              prompt: "На числовій прямій (0 до 1), поділеній на 8 частин, яка мітка збігається з 3/4?",
+              prompt: `На числовій прямій (0 до 1), поділеній на 8 частин, яка мітка збігається з 3/4?<svg viewBox="0 0 240 58" xmlns="http://www.w3.org/2000/svg" style="display:block;margin:8px auto;max-width:260px"><line x1="20" y1="35" x2="220" y2="35" stroke="#1B2A4A" stroke-width="2"/><line x1="20" y1="27" x2="20" y2="43" stroke="#1B2A4A" stroke-width="2"/><line x1="220" y1="27" x2="220" y2="43" stroke="#1B2A4A" stroke-width="2"/><text x="20" y="54" text-anchor="middle" fill="#1B2A4A" font-size="11" font-family="sans-serif">0</text><text x="220" y="54" text-anchor="middle" fill="#1B2A4A" font-size="11" font-family="sans-serif">1</text><line x1="45" y1="30" x2="45" y2="40" stroke="#1B2A4A" stroke-width="1"/><line x1="70" y1="30" x2="70" y2="40" stroke="#1B2A4A" stroke-width="1"/><line x1="95" y1="30" x2="95" y2="40" stroke="#1B2A4A" stroke-width="1"/><line x1="120" y1="28" x2="120" y2="42" stroke="#1B2A4A" stroke-width="1.5"/><line x1="145" y1="30" x2="145" y2="40" stroke="#1B2A4A" stroke-width="1"/><line x1="170" y1="26" x2="170" y2="44" stroke="#2D9B7C" stroke-width="2"/><line x1="195" y1="30" x2="195" y2="40" stroke="#1B2A4A" stroke-width="1"/><circle cx="170" cy="35" r="5" fill="#E8704A"/><text x="170" y="20" text-anchor="middle" fill="#E8704A" font-size="10" font-family="sans-serif" font-weight="bold">3/4 = ?/8</text></svg>`,
               options: ["3/8", "6/8", "4/8", "5/8"],
               correct: 1,
               explain: {
@@ -731,7 +761,7 @@ const LESSON_DATA = {
               solution: "3/4: ×2 → 6/8. Точка 6/8 збігається з 3/4 на числовій прямій."
             },
             {
-              prompt: "Яка з точок на числовій прямій (0 до 1, поділена на 6 частин) НЕ збігається з 2/3?",
+              prompt: `Яка з точок на числовій прямій (0 до 1, поділена на 6 частин) НЕ збігається з 2/3?<svg viewBox="0 0 220 58" xmlns="http://www.w3.org/2000/svg" style="display:block;margin:8px auto;max-width:240px"><line x1="20" y1="35" x2="200" y2="35" stroke="#1B2A4A" stroke-width="2"/><line x1="20" y1="27" x2="20" y2="43" stroke="#1B2A4A" stroke-width="2"/><line x1="200" y1="27" x2="200" y2="43" stroke="#1B2A4A" stroke-width="2"/><text x="20" y="54" text-anchor="middle" fill="#1B2A4A" font-size="11" font-family="sans-serif">0</text><text x="200" y="54" text-anchor="middle" fill="#1B2A4A" font-size="11" font-family="sans-serif">1</text><line x1="50" y1="30" x2="50" y2="40" stroke="#1B2A4A" stroke-width="1"/><line x1="80" y1="30" x2="80" y2="40" stroke="#1B2A4A" stroke-width="1"/><line x1="110" y1="30" x2="110" y2="40" stroke="#1B2A4A" stroke-width="1"/><line x1="140" y1="26" x2="140" y2="44" stroke="#2D9B7C" stroke-width="2"/><line x1="170" y1="30" x2="170" y2="40" stroke="#1B2A4A" stroke-width="1"/><circle cx="140" cy="35" r="5" fill="#2D9B7C"/><text x="140" y="20" text-anchor="middle" fill="#2D9B7C" font-size="10" font-family="sans-serif" font-weight="bold">2/3</text></svg>`,
               options: ["4/6", "6/9", "2/3", "3/6"],
               correct: 3,
               explain: {
@@ -742,7 +772,7 @@ const LESSON_DATA = {
               solution: "3/6 = 1/2, а 2/3 ≠ 1/2. Ці точки НЕ збігаються."
             },
             {
-              prompt: "На числовій прямій: точка A стоїть на 1/4, точка B — на 2/8. Що можна сказати?",
+              prompt: `На числовій прямій: точка A стоїть на 1/4, точка B — на 2/8. Що можна сказати?<svg viewBox="0 0 240 65" xmlns="http://www.w3.org/2000/svg" style="display:block;margin:8px auto;max-width:260px"><line x1="20" y1="38" x2="220" y2="38" stroke="#1B2A4A" stroke-width="2"/><line x1="20" y1="30" x2="20" y2="46" stroke="#1B2A4A" stroke-width="2"/><line x1="220" y1="30" x2="220" y2="46" stroke="#1B2A4A" stroke-width="2"/><text x="20" y="57" text-anchor="middle" fill="#1B2A4A" font-size="11" font-family="sans-serif">0</text><text x="220" y="57" text-anchor="middle" fill="#1B2A4A" font-size="11" font-family="sans-serif">1</text><line x1="45" y1="33" x2="45" y2="43" stroke="#1B2A4A" stroke-width="1"/><line x1="70" y1="30" x2="70" y2="46" stroke="#1B2A4A" stroke-width="1.5"/><line x1="95" y1="33" x2="95" y2="43" stroke="#1B2A4A" stroke-width="1"/><line x1="120" y1="31" x2="120" y2="45" stroke="#1B2A4A" stroke-width="1.5"/><line x1="145" y1="33" x2="145" y2="43" stroke="#1B2A4A" stroke-width="1"/><line x1="170" y1="31" x2="170" y2="45" stroke="#1B2A4A" stroke-width="1.5"/><line x1="195" y1="33" x2="195" y2="43" stroke="#1B2A4A" stroke-width="1"/><circle cx="70" cy="38" r="6" fill="#E8704A" opacity="0.85"/><text x="70" y="22" text-anchor="middle" fill="#E8704A" font-size="11" font-family="sans-serif" font-weight="bold">A (1/4)</text><text x="70" y="62" text-anchor="middle" fill="#2D9B7C" font-size="11" font-family="sans-serif" font-weight="bold">B (2/8)</text></svg>`,
               options: [
                 "A > B",
                 "A < B",
