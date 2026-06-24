@@ -395,8 +395,8 @@ function renderTopicComplete(topic){
   els.questionCard.innerHTML = allDone ? `
     <div class="topic-complete-screen">
       <div class="badge" style="font-size:2.2rem">🎉</div>
-      <h3>Ти пройшла весь курс!</h3>
-      <p>Всі теми завершено. Ти чудово підготувалась до тесту — так тримати!</p>
+      <h3>Курс пройдено!</h3>
+      <p>Всі теми завершено. Чудова підготовка до тесту — так тримати!</p>
       <button class="btn btn-primary" id="toDayListBtn">Переглянути все</button>
     </div>
   ` : `
