@@ -389,9 +389,17 @@ function renderTopicComplete(topic){
   const day = found.day;
   const dayIdx = LESSON_DATA.days.findIndex(d => d.id === day.id);
   const dayNowComplete = isDayComplete(dayIdx);
+  const allDone = LESSON_DATA.days.every((_, i) => isDayComplete(i));
 
   els.quizProgressBar.innerHTML = "";
-  els.questionCard.innerHTML = `
+  els.questionCard.innerHTML = allDone ? `
+    <div class="topic-complete-screen">
+      <div class="badge" style="font-size:2.2rem">🎉</div>
+      <h3>Ти пройшла весь курс!</h3>
+      <p>Всі теми завершено. Ти чудово підготувалась до тесту — так тримати!</p>
+      <button class="btn btn-primary" id="toDayListBtn">Переглянути все</button>
+    </div>
+  ` : `
     <div class="topic-complete-screen">
       <div class="badge">✓</div>
       <h3>Тему завершено!</h3>

@@ -960,6 +960,19 @@ const LESSON_DATA = {
             <p>Крок 2: знайди потрібний стовпець по осі X.</p>
             <p>Крок 3: визнач висоту стовпця за шкалою.</p>
             <p>Приклад: шкала по 2 (0, 2, 4, 6, 8...). Стовпець доходить до третьої лінії (значення 6).</p>
+            <svg viewBox="0 0 120 110" xmlns="http://www.w3.org/2000/svg" style="display:block;margin:8px auto;max-width:130px">
+              <line x1="40" y1="15" x2="40" y2="95" stroke="#1B2A4A" stroke-width="2"/>
+              <line x1="40" y1="95" x2="110" y2="95" stroke="#1B2A4A" stroke-width="2"/>
+              <line x1="35" y1="95" x2="40" y2="95" stroke="#1B2A4A" stroke-width="1"/><text x="32" y="99" text-anchor="end" fill="#1B2A4A" font-size="10" font-family="sans-serif">0</text>
+              <line x1="35" y1="75" x2="40" y2="75" stroke="#1B2A4A" stroke-width="1"/><text x="32" y="79" text-anchor="end" fill="#1B2A4A" font-size="10" font-family="sans-serif">2</text>
+              <line x1="35" y1="55" x2="40" y2="55" stroke="#1B2A4A" stroke-width="1"/><text x="32" y="59" text-anchor="end" fill="#1B2A4A" font-size="10" font-family="sans-serif">4</text>
+              <line x1="35" y1="35" x2="40" y2="35" stroke="#1B2A4A" stroke-width="1"/><text x="32" y="39" text-anchor="end" fill="#1B2A4A" font-size="10" font-family="sans-serif">6</text>
+              <line x1="35" y1="15" x2="40" y2="15" stroke="#1B2A4A" stroke-width="1"/><text x="32" y="19" text-anchor="end" fill="#1B2A4A" font-size="10" font-family="sans-serif">8</text>
+              <line x1="40" y1="55" x2="110" y2="55" stroke="#1B2A4A" stroke-width="0.5" opacity="0.3"/>
+              <rect x="55" y="35" width="50" height="60" fill="#2D9B7C" stroke="#1B2A4A" stroke-width="1"/>
+              <line x1="40" y1="35" x2="55" y2="35" stroke="#E8704A" stroke-width="1.5" stroke-dasharray="4,2"/>
+              <text x="75" y="108" text-anchor="middle" fill="#1B2A4A" font-size="10" font-family="sans-serif">Стовпець = 6</text>
+            </svg>
             <p>Відповідь: <span class="formula">6</span>.</p>
             <div class="warn">⚠️ Помилка: рахувати клітинки замість зчитувати по шкалі. Якщо шкала йде по 5 (0, 5, 10), то одна клітинка = 5, а не 1!</div>
           `,
@@ -1036,8 +1049,8 @@ const LESSON_DATA = {
   <rect x="166" y="80" width="38" height="70" fill="none" stroke="#D4A23C" stroke-width="2" stroke-dasharray="4,3"/>
   <text x="185" y="118" text-anchor="middle" fill="#E8704A" font-size="18" font-family="sans-serif" font-weight="bold">?</text>
   <text x="185" y="168" text-anchor="middle" fill="#1B2A4A" font-size="10" font-family="sans-serif">Черепаха</text>
-  <text x="133" y="180" text-anchor="middle" fill="#1B2A4A" font-size="9" font-family="sans-serif" font-style="italic">Всього голосів: 30</text>
-</svg>Скільки голосів отримала «Черепаха»?`,
+
+</svg>Всього голосів — 30. Кіт отримав 12, Собака — 10. Скільки голосів отримала «Черепаха»?`,
               options: ["22", "8", "32", "2"],
               correct: 1,
               explain: {
@@ -1087,14 +1100,15 @@ const LESSON_DATA = {
             <p>Крок 1: знайди правило (подивись на пари чисел, які вже заповнені).</p>
             <p>Крок 2: перевір правило на кількох парах, щоб переконатися.</p>
             <p>Крок 3: застосуй те саме правило до невідомого числа.</p>
-            <p>Приклад: таблиця "вхід → вихід": 2→6, 3→9, 4→12, 5→?</p>
+            <p>Приклад таблиці "вхід → вихід":</p>
+            <table style="border-collapse:collapse;margin:8px auto"><tr><th style="border:2px solid #2D9B7C;padding:5px 14px;background:#E8F8F3;color:#1B2A4A">Вхід</th><th style="border:2px solid #2D9B7C;padding:5px 14px;background:#E8F8F3;color:#1B2A4A">Вихід</th></tr><tr><td style="border:1px solid #2D9B7C;padding:5px 14px;text-align:center">2</td><td style="border:1px solid #2D9B7C;padding:5px 14px;text-align:center">6</td></tr><tr><td style="border:1px solid #2D9B7C;padding:5px 14px;text-align:center">3</td><td style="border:1px solid #2D9B7C;padding:5px 14px;text-align:center">9</td></tr><tr><td style="border:1px solid #2D9B7C;padding:5px 14px;text-align:center">4</td><td style="border:1px solid #2D9B7C;padding:5px 14px;text-align:center">12</td></tr><tr><td style="border:1px solid #2D9B7C;padding:5px 14px;text-align:center">5</td><td style="border:1px solid #E8704A;padding:5px 14px;text-align:center;color:#E8704A;font-weight:bold">?</td></tr></table>
             <p>Правило: вхід × 3 = вихід. Перевірка: 2×3=6 ✓, 3×3=9 ✓.</p>
             <p>Пропущене: <span class="formula">5 × 3 = 15</span>.</p>
             <div class="warn">⚠️ Помилка: перевіряти правило лише на одній парі і вважати, що воно правильне. Завжди перевіряй на 2+ парах.</div>
           `,
           questions: [
             {
-              prompt: "Таблиця: 3→12, 5→20, 7→28, 9→? Яке правило і яке пропущене число?",
+              prompt: `<table style="border-collapse:collapse;margin:8px auto"><tr><th style="border:2px solid #2D9B7C;padding:5px 14px;background:#E8F8F3;color:#1B2A4A">Вхід</th><th style="border:2px solid #2D9B7C;padding:5px 14px;background:#E8F8F3;color:#1B2A4A">Вихід</th></tr><tr><td style="border:1px solid #2D9B7C;padding:5px 14px;text-align:center">3</td><td style="border:1px solid #2D9B7C;padding:5px 14px;text-align:center">12</td></tr><tr><td style="border:1px solid #2D9B7C;padding:5px 14px;text-align:center">5</td><td style="border:1px solid #2D9B7C;padding:5px 14px;text-align:center">20</td></tr><tr><td style="border:1px solid #2D9B7C;padding:5px 14px;text-align:center">7</td><td style="border:1px solid #2D9B7C;padding:5px 14px;text-align:center">28</td></tr><tr><td style="border:1px solid #2D9B7C;padding:5px 14px;text-align:center">9</td><td style="border:1px solid #E8704A;padding:5px 14px;text-align:center;color:#E8704A;font-weight:bold">?</td></tr></table>Яке правило і яке пропущене число?`,
               options: ["×3, пропущене = 27", "×4, пропущене = 36", "+8, пропущене = 17", "×4, пропущене = 32"],
               correct: 1,
               explain: {
@@ -1105,7 +1119,7 @@ const LESSON_DATA = {
               solution: "Правило ×4: 3×4=12 ✓, 5×4=20 ✓, 7×4=28 ✓. 9×4=36."
             },
             {
-              prompt: "Таблиця «вхід → вихід»: 10→7, 15→12, 20→17, 25→? Знайди правило і пропущене число.",
+              prompt: `<table style="border-collapse:collapse;margin:8px auto"><tr><th style="border:2px solid #2D9B7C;padding:5px 14px;background:#E8F8F3;color:#1B2A4A">Вхід</th><th style="border:2px solid #2D9B7C;padding:5px 14px;background:#E8F8F3;color:#1B2A4A">Вихід</th></tr><tr><td style="border:1px solid #2D9B7C;padding:5px 14px;text-align:center">10</td><td style="border:1px solid #2D9B7C;padding:5px 14px;text-align:center">7</td></tr><tr><td style="border:1px solid #2D9B7C;padding:5px 14px;text-align:center">15</td><td style="border:1px solid #2D9B7C;padding:5px 14px;text-align:center">12</td></tr><tr><td style="border:1px solid #2D9B7C;padding:5px 14px;text-align:center">20</td><td style="border:1px solid #2D9B7C;padding:5px 14px;text-align:center">17</td></tr><tr><td style="border:1px solid #2D9B7C;padding:5px 14px;text-align:center">25</td><td style="border:1px solid #E8704A;padding:5px 14px;text-align:center;color:#E8704A;font-weight:bold">?</td></tr></table>Знайди правило і пропущене число.`,
               options: ["−3, 22", "÷2, 12", "−3, 21", "−4, 21"],
               correct: 0,
               explain: {
@@ -1116,7 +1130,7 @@ const LESSON_DATA = {
               solution: "Правило −3: 10−3=7 ✓, 15−3=12 ✓. 25−3=22."
             },
             {
-              prompt: "Таблиця: 4→24, 5→30, 6→36, ?→42. Яке число вхід?",
+              prompt: `<table style="border-collapse:collapse;margin:8px auto"><tr><th style="border:2px solid #2D9B7C;padding:5px 14px;background:#E8F8F3;color:#1B2A4A">Вхід</th><th style="border:2px solid #2D9B7C;padding:5px 14px;background:#E8F8F3;color:#1B2A4A">Вихід</th></tr><tr><td style="border:1px solid #2D9B7C;padding:5px 14px;text-align:center">4</td><td style="border:1px solid #2D9B7C;padding:5px 14px;text-align:center">24</td></tr><tr><td style="border:1px solid #2D9B7C;padding:5px 14px;text-align:center">5</td><td style="border:1px solid #2D9B7C;padding:5px 14px;text-align:center">30</td></tr><tr><td style="border:1px solid #2D9B7C;padding:5px 14px;text-align:center">6</td><td style="border:1px solid #2D9B7C;padding:5px 14px;text-align:center">36</td></tr><tr><td style="border:1px solid #E8704A;padding:5px 14px;text-align:center;color:#E8704A;font-weight:bold">?</td><td style="border:1px solid #2D9B7C;padding:5px 14px;text-align:center">42</td></tr></table>Яке число вхід?`,
               options: ["6", "7", "8", "9"],
               correct: 1,
               explain: {
@@ -1127,7 +1141,7 @@ const LESSON_DATA = {
               solution: "Правило ×6: 4×6=24 ✓, 5×6=30 ✓, 6×6=36 ✓. 7×6=42 ✓. Вхід = 7."
             },
             {
-              prompt: "Правило таблиці: «додай 8». Якщо вхід = 13, що на виході?",
+              prompt: `<table style="border-collapse:collapse;margin:8px auto"><tr><th style="border:2px solid #2D9B7C;padding:5px 14px;background:#E8F8F3;color:#1B2A4A">Вхід</th><th style="border:2px solid #2D9B7C;padding:5px 14px;background:#E8F8F3;color:#1B2A4A">Вихід (правило: +8)</th></tr><tr><td style="border:1px solid #2D9B7C;padding:5px 14px;text-align:center">13</td><td style="border:1px solid #E8704A;padding:5px 14px;text-align:center;color:#E8704A;font-weight:bold">?</td></tr></table>Що на виході?`,
               options: ["5", "21", "104", "15"],
               correct: 1,
               explain: {
@@ -1152,7 +1166,7 @@ const LESSON_DATA = {
       topics: [
         {
           id: "d5t1",
-          title: "Багатокрокові задачі: спочатку множення, потім дія",
+          title: "Багатокрокові задачі: множення і ще одна дія",
           subtitle: "Не пропускаємо кроків",
           reference: `
             <p><strong>Багатокрокова задача</strong> — задача, де для відповіді треба виконати <strong>дві або більше дій</strong>.</p>
@@ -1162,7 +1176,7 @@ const LESSON_DATA = {
           theory: `
             <p>Тип задачі: «знайди загальне (множенням), потім виконай ще одну дію».</p>
             <p>Крок 1: знайди проміжний результат (зазвичай множення або ділення).</p>
-            <p>Крок 2: використай результат крок 1 для наступної дії (додавання або віднімання).</p>
+            <p>Крок 2: використай результат кроку 1 для наступної дії (додавання або віднімання).</p>
             <p>Приклад: «У 4 коробках по 6 цукерок. Дали ще 5. Скільки цукерок стало?»</p>
             <p>Крок 1: <span class="formula">4 × 6 = 24</span> цукерки в коробках.</p>
             <p>Крок 2: <span class="formula">24 + 5 = 29</span> цукерок всього.</p>
@@ -1229,13 +1243,20 @@ const LESSON_DATA = {
             <p>Крок 1: визнач, що є <strong>ціле</strong> (загальне) і що є <strong>частини</strong>.</p>
             <p>Крок 2: якщо невідоме ціле — склади частини. Якщо невідома частина — відніми від цілого.</p>
             <p>Приклад: ціле = 85. Одна частина = 47. Яка друга частина?</p>
+            <svg viewBox="0 0 220 50" xmlns="http://www.w3.org/2000/svg" style="display:block;margin:8px auto;max-width:240px">
+              <text x="110" y="10" text-anchor="middle" fill="#1B2A4A" font-size="11" font-family="sans-serif">← Ціле = 85 →</text>
+              <rect x="10" y="14" width="110" height="30" fill="#E8F8F3" stroke="#2D9B7C" stroke-width="2"/>
+              <text x="65" y="34" text-anchor="middle" fill="#1B2A4A" font-size="13" font-family="sans-serif" font-weight="bold">47</text>
+              <rect x="120" y="14" width="90" height="30" fill="#FFF8F5" stroke="#E8704A" stroke-width="2"/>
+              <text x="165" y="34" text-anchor="middle" fill="#E8704A" font-size="13" font-family="sans-serif" font-weight="bold">?</text>
+            </svg>
             <p>Крок 1: невідома частина = ціле − відома частина.</p>
             <p>Крок 2: <span class="formula">85 − 47 = 38</span>.</p>
             <div class="warn">⚠️ Помилка: скласти дві відомі числа замість відняти. Завжди визнач спочатку — що є ціле і що є частина.</div>
           `,
           questions: [
             {
-              prompt: "Стрічкова діаграма: ціле = 120. Одна частина = 73. Яка друга частина?",
+              prompt: `<svg viewBox="0 0 220 50" xmlns="http://www.w3.org/2000/svg" style="display:block;margin:8px auto;max-width:240px"><text x="110" y="10" text-anchor="middle" fill="#1B2A4A" font-size="11" font-family="sans-serif">← Ціле = 120 →</text><rect x="10" y="14" width="121" height="30" fill="#E8F8F3" stroke="#2D9B7C" stroke-width="2"/><text x="70" y="34" text-anchor="middle" fill="#1B2A4A" font-size="13" font-weight="bold">73</text><rect x="131" y="14" width="79" height="30" fill="#FFF8F5" stroke="#E8704A" stroke-width="2"/><text x="170" y="34" text-anchor="middle" fill="#E8704A" font-size="13" font-weight="bold">?</text></svg>Яка друга частина?`,
               options: ["193", "47", "53", "37"],
               correct: 1,
               explain: {
@@ -1246,7 +1267,7 @@ const LESSON_DATA = {
               solution: "120 − 73 = 47."
             },
             {
-              prompt: "Дві частини: 56 і 38. Що таке ціле?",
+              prompt: `<svg viewBox="0 0 220 50" xmlns="http://www.w3.org/2000/svg" style="display:block;margin:8px auto;max-width:240px"><text x="110" y="10" text-anchor="middle" fill="#E8704A" font-size="11" font-family="sans-serif">← Ціле = ? →</text><rect x="10" y="14" width="119" height="30" fill="#E8F8F3" stroke="#2D9B7C" stroke-width="2"/><text x="69" y="34" text-anchor="middle" fill="#1B2A4A" font-size="13" font-weight="bold">56</text><rect x="129" y="14" width="81" height="30" fill="#D4EEE6" stroke="#2D9B7C" stroke-width="2"/><text x="169" y="34" text-anchor="middle" fill="#1B2A4A" font-size="13" font-weight="bold">38</text></svg>Що таке ціле?`,
               options: ["18", "74", "84", "94"],
               correct: 3,
               explain: {
@@ -1257,7 +1278,7 @@ const LESSON_DATA = {
               solution: "56 + 38 = 94."
             },
             {
-              prompt: "Ціле = 200. Перша частина = 125. Яка друга частина?",
+              prompt: `<svg viewBox="0 0 220 50" xmlns="http://www.w3.org/2000/svg" style="display:block;margin:8px auto;max-width:240px"><text x="110" y="10" text-anchor="middle" fill="#1B2A4A" font-size="11" font-family="sans-serif">← Ціле = 200 →</text><rect x="10" y="14" width="125" height="30" fill="#E8F8F3" stroke="#2D9B7C" stroke-width="2"/><text x="72" y="34" text-anchor="middle" fill="#1B2A4A" font-size="13" font-weight="bold">125</text><rect x="135" y="14" width="75" height="30" fill="#FFF8F5" stroke="#E8704A" stroke-width="2"/><text x="172" y="34" text-anchor="middle" fill="#E8704A" font-size="13" font-weight="bold">?</text></svg>Яка друга частина?`,
               options: ["325", "85", "75", "65"],
               correct: 2,
               explain: {
@@ -1268,7 +1289,7 @@ const LESSON_DATA = {
               solution: "200 − 125 = 75."
             },
             {
-              prompt: "У Саші і Тані разом 96 наліпок. У Саші 57. Скільки у Тані?",
+              prompt: `<svg viewBox="0 0 220 55" xmlns="http://www.w3.org/2000/svg" style="display:block;margin:8px auto;max-width:240px"><text x="110" y="10" text-anchor="middle" fill="#1B2A4A" font-size="11" font-family="sans-serif">← Разом = 96 наліпок →</text><rect x="10" y="14" width="119" height="35" fill="#E8F8F3" stroke="#2D9B7C" stroke-width="2"/><text x="69" y="29" text-anchor="middle" fill="#1B2A4A" font-size="11" font-family="sans-serif">Саша</text><text x="69" y="43" text-anchor="middle" fill="#1B2A4A" font-size="13" font-weight="bold">57</text><rect x="129" y="14" width="81" height="35" fill="#FFF8F5" stroke="#E8704A" stroke-width="2"/><text x="169" y="29" text-anchor="middle" fill="#E8704A" font-size="11" font-family="sans-serif">Таня</text><text x="169" y="43" text-anchor="middle" fill="#E8704A" font-size="13" font-weight="bold">?</text></svg>Скільки наліпок у Тані?`,
               options: ["153", "63", "57", "39"],
               correct: 3,
               explain: {
@@ -1290,7 +1311,22 @@ const LESSON_DATA = {
             <p><strong>Позичання</strong> (при відніманні): якщо менше число стоїть зверху — позич 1 десяток і додай 10 до одиниць.</p>
           `,
           theory: `
-            <p>Приклад додавання: <span class="formula">347 + 285</span></p>
+            <p>Приклад додавання у стовпчик: <span class="formula">347 + 285</span></p>
+            <svg viewBox="0 0 100 88" xmlns="http://www.w3.org/2000/svg" style="display:block;margin:6px auto;max-width:110px">
+              <text x="36" y="14" text-anchor="middle" fill="#E8704A" font-size="10" font-family="monospace">¹</text>
+              <text x="54" y="14" text-anchor="middle" fill="#E8704A" font-size="10" font-family="monospace">¹</text>
+              <text x="18" y="28" text-anchor="middle" fill="#1B2A4A" font-size="16" font-family="monospace" font-weight="bold">3</text>
+              <text x="36" y="28" text-anchor="middle" fill="#1B2A4A" font-size="16" font-family="monospace" font-weight="bold">4</text>
+              <text x="54" y="28" text-anchor="middle" fill="#1B2A4A" font-size="16" font-family="monospace" font-weight="bold">7</text>
+              <text x="4" y="48" text-anchor="middle" fill="#1B2A4A" font-size="16" font-family="monospace">+</text>
+              <text x="18" y="48" text-anchor="middle" fill="#1B2A4A" font-size="16" font-family="monospace" font-weight="bold">2</text>
+              <text x="36" y="48" text-anchor="middle" fill="#1B2A4A" font-size="16" font-family="monospace" font-weight="bold">8</text>
+              <text x="54" y="48" text-anchor="middle" fill="#1B2A4A" font-size="16" font-family="monospace" font-weight="bold">5</text>
+              <line x1="2" y1="55" x2="68" y2="55" stroke="#1B2A4A" stroke-width="1.5"/>
+              <text x="18" y="72" text-anchor="middle" fill="#2D9B7C" font-size="16" font-family="monospace" font-weight="bold">6</text>
+              <text x="36" y="72" text-anchor="middle" fill="#2D9B7C" font-size="16" font-family="monospace" font-weight="bold">3</text>
+              <text x="54" y="72" text-anchor="middle" fill="#2D9B7C" font-size="16" font-family="monospace" font-weight="bold">2</text>
+            </svg>
             <p>Крок 1 (одиниці): 7 + 5 = 12. Пишемо 2, переносимо 1.</p>
             <p>Крок 2 (десятки): 4 + 8 + 1(перенесення) = 13. Пишемо 3, переносимо 1.</p>
             <p>Крок 3 (сотні): 3 + 2 + 1(перенесення) = 6.</p>
@@ -1299,7 +1335,7 @@ const LESSON_DATA = {
           `,
           questions: [
             {
-              prompt: "Що дорівнює 456 + 378?",
+              prompt: `<svg viewBox="0 0 80 60" xmlns="http://www.w3.org/2000/svg" style="display:block;margin:6px auto;max-width:90px"><text x="18" y="18" text-anchor="middle" fill="#1B2A4A" font-size="15" font-family="monospace" font-weight="bold">4</text><text x="36" y="18" text-anchor="middle" fill="#1B2A4A" font-size="15" font-family="monospace" font-weight="bold">5</text><text x="54" y="18" text-anchor="middle" fill="#1B2A4A" font-size="15" font-family="monospace" font-weight="bold">6</text><text x="4" y="36" text-anchor="middle" fill="#1B2A4A" font-size="15" font-family="monospace">+</text><text x="18" y="36" text-anchor="middle" fill="#1B2A4A" font-size="15" font-family="monospace" font-weight="bold">3</text><text x="36" y="36" text-anchor="middle" fill="#1B2A4A" font-size="15" font-family="monospace" font-weight="bold">7</text><text x="54" y="36" text-anchor="middle" fill="#1B2A4A" font-size="15" font-family="monospace" font-weight="bold">8</text><line x1="2" y1="42" x2="66" y2="42" stroke="#1B2A4A" stroke-width="1.5"/></svg>Що дорівнює 456 + 378?`,
               options: ["724", "834", "824", "734"],
               correct: 1,
               explain: {
@@ -1310,7 +1346,7 @@ const LESSON_DATA = {
               solution: "Одиниці: 6+8=14 → 4, перенос 1. Десятки: 5+7+1=13 → 3, перенос 1. Сотні: 4+3+1=8. Відповідь: 834."
             },
             {
-              prompt: "Що дорівнює 503 − 268?",
+              prompt: `<svg viewBox="0 0 80 60" xmlns="http://www.w3.org/2000/svg" style="display:block;margin:6px auto;max-width:90px"><text x="18" y="18" text-anchor="middle" fill="#1B2A4A" font-size="15" font-family="monospace" font-weight="bold">5</text><text x="36" y="18" text-anchor="middle" fill="#1B2A4A" font-size="15" font-family="monospace" font-weight="bold">0</text><text x="54" y="18" text-anchor="middle" fill="#1B2A4A" font-size="15" font-family="monospace" font-weight="bold">3</text><text x="4" y="36" text-anchor="middle" fill="#1B2A4A" font-size="15" font-family="monospace">−</text><text x="18" y="36" text-anchor="middle" fill="#1B2A4A" font-size="15" font-family="monospace" font-weight="bold">2</text><text x="36" y="36" text-anchor="middle" fill="#1B2A4A" font-size="15" font-family="monospace" font-weight="bold">6</text><text x="54" y="36" text-anchor="middle" fill="#1B2A4A" font-size="15" font-family="monospace" font-weight="bold">8</text><line x1="2" y1="42" x2="66" y2="42" stroke="#1B2A4A" stroke-width="1.5"/></svg>Що дорівнює 503 − 268?`,
               options: ["345", "235", "245", "335"],
               correct: 1,
               explain: {
@@ -1321,7 +1357,7 @@ const LESSON_DATA = {
               solution: "Одиниці: 3<8, позичаємо від десятків. Десятки=0, тому позичаємо спочатку від сотень: сотні 5→4, десятки 0→10. Тепер позичаємо від десятків для одиниць: десятки 10→9, одиниці 3→13. Одиниці: 13−8=5. Десятки: 9−6=3. Сотні: 4−2=2. Відповідь: 235."
             },
             {
-              prompt: "Що дорівнює 612 + 249?",
+              prompt: `<svg viewBox="0 0 80 60" xmlns="http://www.w3.org/2000/svg" style="display:block;margin:6px auto;max-width:90px"><text x="18" y="18" text-anchor="middle" fill="#1B2A4A" font-size="15" font-family="monospace" font-weight="bold">6</text><text x="36" y="18" text-anchor="middle" fill="#1B2A4A" font-size="15" font-family="monospace" font-weight="bold">1</text><text x="54" y="18" text-anchor="middle" fill="#1B2A4A" font-size="15" font-family="monospace" font-weight="bold">2</text><text x="4" y="36" text-anchor="middle" fill="#1B2A4A" font-size="15" font-family="monospace">+</text><text x="18" y="36" text-anchor="middle" fill="#1B2A4A" font-size="15" font-family="monospace" font-weight="bold">2</text><text x="36" y="36" text-anchor="middle" fill="#1B2A4A" font-size="15" font-family="monospace" font-weight="bold">4</text><text x="54" y="36" text-anchor="middle" fill="#1B2A4A" font-size="15" font-family="monospace" font-weight="bold">9</text><line x1="2" y1="42" x2="66" y2="42" stroke="#1B2A4A" stroke-width="1.5"/></svg>Що дорівнює 612 + 249?`,
               options: ["851", "861", "871", "761"],
               correct: 1,
               explain: {
@@ -1332,7 +1368,7 @@ const LESSON_DATA = {
               solution: "Одиниці: 2+9=11 → 1, перенос 1. Десятки: 1+4+1=6. Сотні: 6+2=8. Відповідь: 861."
             },
             {
-              prompt: "Що дорівнює 700 − 345?",
+              prompt: `<svg viewBox="0 0 80 60" xmlns="http://www.w3.org/2000/svg" style="display:block;margin:6px auto;max-width:90px"><text x="18" y="18" text-anchor="middle" fill="#1B2A4A" font-size="15" font-family="monospace" font-weight="bold">7</text><text x="36" y="18" text-anchor="middle" fill="#1B2A4A" font-size="15" font-family="monospace" font-weight="bold">0</text><text x="54" y="18" text-anchor="middle" fill="#1B2A4A" font-size="15" font-family="monospace" font-weight="bold">0</text><text x="4" y="36" text-anchor="middle" fill="#1B2A4A" font-size="15" font-family="monospace">−</text><text x="18" y="36" text-anchor="middle" fill="#1B2A4A" font-size="15" font-family="monospace" font-weight="bold">3</text><text x="36" y="36" text-anchor="middle" fill="#1B2A4A" font-size="15" font-family="monospace" font-weight="bold">4</text><text x="54" y="36" text-anchor="middle" fill="#1B2A4A" font-size="15" font-family="monospace" font-weight="bold">5</text><line x1="2" y1="42" x2="66" y2="42" stroke="#1B2A4A" stroke-width="1.5"/></svg>Що дорівнює 700 − 345?`,
               options: ["455", "365", "355", "465"],
               correct: 2,
               explain: {
@@ -1523,15 +1559,15 @@ const LESSON_DATA = {
               solution: "5 рядів × 8 зірочок = 40 зірочок. Рівняння: 5×8=40."
             },
             {
-              prompt: "Яке рівняння правильне для слів: «Загалом 63, в кожному ряді 7, знайти кількість рядів»?",
-              options: ["7 × 9 = 63", "63 + 7 = 70", "63 ÷ 9 = 7", "63 − 7 = 56"],
+              prompt: "Загалом 63 зірочки, в кожному ряді 7. Яке рівняння знаходить кількість рядів?",
+              options: ["63 ÷ 7 = 9", "7 × 63 = 9", "63 + 7 = 70", "63 − 7 = 56"],
               correct: 0,
               explain: {
-                1: "Додавання не допоможе знайти кількість рядів.",
-                2: "Перевір: 63÷9=7, але задача каже «в кожному ряді 7», тому дільник має бути 7, а не 9.",
+                1: "7 × 63 = 441, а не 9. Це неправильне рівняння.",
+                2: "Додавання не знаходить кількість рядів.",
                 3: "Віднімання не описує цю задачу."
               },
-              solution: "63 ÷ 7 = 9 рядів. Або рівняння множення: 7 × 9 = 63 — показує зв'язок між числами."
+              solution: "Якщо всього 63 і в кожному ряді 7 — ділимо: 63 ÷ 7 = 9 рядів."
             }
           ]
         }
